@@ -5,7 +5,7 @@ extract and view the content of PHP phar files.
 
 The interface of the application was developed with wxFormBuilder and its 
 source code can serve as an example of how to integrated graphical user 
-interfaces designed with wxFormBuilder with your code.
+interfaces designed with wxFormBuilder in your code.
 
 ## Features
 
