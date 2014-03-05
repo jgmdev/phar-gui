@@ -2,18 +2,16 @@
 /**
  * @author Jefferson González
  * @license MIT
- * @link http://github.com/jgmdev/phargui Source code.
+ * @link http://github.com/jgmdev/phar-gui Source code.
 */
 
 // Register class auto-loader
-function cms_autoloader($class_name)
+function phargui_autoloader($class_name)
 {
-	$file = str_replace('\\', '/', $class_name) . '.php';
-
-    print 'lib/'.$file;
+    $file = str_replace('\\', '/', $class_name) . '.php';
     
-	include('lib/'.$file);
+    include('lib/'.$file);
 }
 
-spl_autoload_register('cms_autoloader');
+spl_autoload_register('phargui_autoloader');
 ?>

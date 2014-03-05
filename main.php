@@ -6,7 +6,7 @@
  *
  * @author Jefferson González
  * @license MIT
- * @link http://github.com/jgmdev/phargui Source code.
+ * @link http://github.com/jgmdev/phar-gui Source code.
 */
 
 // Change to the directory that holds phargui 
