@@ -20,6 +20,10 @@ interfaces designed with wxFormBuilder with your code.
 * Modify phar file alias
 * View the code of php files inside the phar by double clicking them.
 
+## Missing Features
+
+* Edit compression options
+
 ## Installation
 
 You will need the latest version of wxPHP which you can find at
@@ -34,3 +38,19 @@ Download this source files to a directory on your machine and execute:
 Main Window:
 
 ![main window](https://raw.github.com/jgmdev/phar-gui/master/screenshots/ss01.png)
+
+Context Menu:
+
+![context menu](https://raw.github.com/jgmdev/phar-gui/master/screenshots/ss02.png)
+
+Editing Options:
+
+![editing options](https://raw.github.com/jgmdev/phar-gui/master/screenshots/ss03.png)
+
+Stub Editing:
+
+![stubg editing](https://raw.github.com/jgmdev/phar-gui/master/screenshots/ss04.png)
+
+Alias Editing:
+
+![alias editing](https://raw.github.com/jgmdev/phar-gui/master/screenshots/ss05.png)
