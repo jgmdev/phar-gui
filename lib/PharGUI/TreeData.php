@@ -3,7 +3,7 @@
  * @author Jefferson González
  * @license MIT
  * @link http://github.com/jgmdev/phar-gui Source code.
-*/
+ */
 
 namespace PharGUI;
 

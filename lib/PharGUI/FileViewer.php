@@ -3,7 +3,7 @@
  * @author Jefferson González
  * @license MIT
  * @link http://github.com/jgmdev/phar-gui Source code.
-*/
+ */
 
 namespace PharGUI;
 
@@ -17,7 +17,7 @@ use PharViewerTemplate;
  */
 class FileViewer extends PharViewerTemplate
 {
-    const MODE_PHP=1;
+    const MODE_PHP = 1;
 
     /**
      * The code viewer.
@@ -33,22 +33,28 @@ class FileViewer extends PharViewerTemplate
     {
         parent::__construct($parent);
 
-        $mainSizer = new wxBoxSizer( wxVERTICAL );
+        $mainSizer = new wxBoxSizer(wxVERTICAL);
 
-		$this->editor = new wxStyledTextCtrl($this);
-        $this->editor->SetMarginWidth (0, 50);
-        $this->editor->StyleSetForeground (wxSTC_STYLE_LINENUMBER, new wxColour (75, 75, 75) );
-        $this->editor->StyleSetBackground (wxSTC_STYLE_LINENUMBER, new wxColour (220, 220, 220));
-        $this->editor->SetMarginType (0, wxSTC_MARGIN_NUMBER);
+        $this->editor = new wxStyledTextCtrl($this);
+        $this->editor->SetMarginWidth(0, 50);
+        $this->editor->StyleSetForeground(
+            wxSTC_STYLE_LINENUMBER,
+            new wxColour(75, 75, 75)
+        );
+        $this->editor->StyleSetBackground(
+            wxSTC_STYLE_LINENUMBER,
+            new wxColour(220, 220, 220)
+        );
+        $this->editor->SetMarginType(0, wxSTC_MARGIN_NUMBER);
 
-        $mainSizer->Add( $this->editor, 1, wxEXPAND | wxALL, 5 );
+        $mainSizer->Add($this->editor, 1, wxEXPAND | wxALL, 5);
 
-		$this->SetSizer( $mainSizer );
-		$this->Layout();
+        $this->SetSizer($mainSizer);
+        $this->Layout();
 
-		$mainSizer->Fit( $this );
+        $mainSizer->Fit($this);
 
-		$this->Centre( wxBOTH );
+        $this->Centre(wxBOTH);
     }
 
     /**
@@ -65,53 +71,43 @@ class FileViewer extends PharViewerTemplate
                 $this->editor->SetLexer(wxSTC_LEX_PHPSCRIPT | wxSTC_LEX_HTML);
 
                 $this->editor->StyleSetForeground(
-                    wxSTC_HPHP_DEFAULT,
-                    new wxColour(0,0,0)
+                    wxSTC_HPHP_DEFAULT, new wxColour(0, 0, 0)
                 );
 
                 $this->editor->StyleSetForeground(
-                    wxSTC_HPHP_HSTRING,
-                    new wxColour(255,0,0)
+                    wxSTC_HPHP_HSTRING, new wxColour(255, 0, 0)
                 );
 
                 $this->editor->StyleSetForeground(
-                    wxSTC_HPHP_SIMPLESTRING,
-                    new wxColour(255,0,0)
+                    wxSTC_HPHP_SIMPLESTRING, new wxColour(255, 0, 0)
                 );
 
                 $this->editor->StyleSetForeground(
-                    wxSTC_HPHP_WORD,
-                    new wxColour(0,0,155)
+                    wxSTC_HPHP_WORD, new wxColour(0, 0, 155)
                 );
 
                 $this->editor->StyleSetForeground(
-                    wxSTC_HPHP_NUMBER,
-                    new wxColour(0,150,0)
+                    wxSTC_HPHP_NUMBER, new wxColour(0, 150, 0)
                 );
 
                 $this->editor->StyleSetForeground(
-                    wxSTC_HPHP_VARIABLE,
-                    new wxColour(0,0,150)
+                    wxSTC_HPHP_VARIABLE, new wxColour(0, 0, 150)
                 );
 
                 $this->editor->StyleSetForeground(
-                    wxSTC_HPHP_COMMENT,
-                    new wxColour(150,150,150)
+                    wxSTC_HPHP_COMMENT, new wxColour(150, 150, 150)
                 );
 
                 $this->editor->StyleSetForeground(
-                    wxSTC_HPHP_COMMENTLINE,
-                    new wxColour(150,150,150)
+                    wxSTC_HPHP_COMMENTLINE, new wxColour(150, 150, 150)
                 );
 
                 $this->editor->StyleSetForeground(
-                    wxSTC_HPHP_HSTRING_VARIABLE,
-                    new wxColour(0,0,150)
+                    wxSTC_HPHP_HSTRING_VARIABLE, new wxColour(0, 0, 150)
                 );
 
                 $this->editor->StyleSetForeground(
-                    wxSTC_HPHP_OPERATOR,
-                    new wxColour(0,150,0)
+                    wxSTC_HPHP_OPERATOR, new wxColour(0, 150, 0)
                 );
 
                 break;

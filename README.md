@@ -1,10 +1,10 @@
 # Phar GUI
 
-A graphical user interface developed with [wxPHP](http://wxphp.org) to manage, 
-extract and view the content of PHP phar files. 
+A graphical user interface developed with [wxPHP](http://wxphp.org) to manage,
+extract and view the content of PHP phar files.
 
-The interface of the application was developed with wxFormBuilder and its 
-source code can serve as an example of how to integrated graphical user 
+The interface of the application was developed with wxFormBuilder and its
+source code can serve as an example of how to integrate graphical user
 interfaces designed with wxFormBuilder in your code.
 
 ## Features

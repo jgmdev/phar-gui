@@ -3,7 +3,7 @@
  * @author Jefferson González
  * @license MIT
  * @link http://github.com/jgmdev/phar-gui Source code.
-*/
+ */
 
 namespace PharGUI;
 
@@ -60,8 +60,8 @@ class Window extends PharFrameTemplate
         $this->tree_ctrl = &$this->m_treeCtrlFiles;
 
         $imagelist = new wxImageList(24, 24);
-        $imagelist->Add(new wxBitmap ("images/folder.png", wxBITMAP_TYPE_PNG));
-        $imagelist->Add(new wxBitmap ("images/file.png", wxBITMAP_TYPE_PNG));
+        $imagelist->Add(new wxBitmap("images/folder.png", wxBITMAP_TYPE_PNG));
+        $imagelist->Add(new wxBitmap("images/file.png", wxBITMAP_TYPE_PNG));
 
         $this->tree_ctrl->SetImageList($imagelist);
 
@@ -159,12 +159,12 @@ class Window extends PharFrameTemplate
 
     public function OnMenuNew($event)
     {
-		$dialog = new wxFileDialog(
-            $this, 
-            "Select a phar file name", 
-            "", 
-            "", 
-            "PHP Phar file|*.phar", 
+        $dialog = new wxFileDialog(
+            $this,
+            "Select a phar file name",
+            "",
+            "",
+            "PHP Phar file|*.phar",
             wxFD_SAVE
         );
 
@@ -206,8 +206,7 @@ class Window extends PharFrameTemplate
 
             wxMessageBox(
                 "In order to modify phar files you need to set "
-                . "phar.readonly to 0 on your php.ini",
-                "Warning"
+                . "phar.readonly to 0 on your php.ini", "Warning"
             );
         }
         else
@@ -220,15 +219,15 @@ class Window extends PharFrameTemplate
         }
 
         $this->SetTitle($title . " - Phar GUI");
-	}
+    }
 
     function OnMenuOpen($event)
     {
-		$dialog = new wxFileDialog(
-            $this, 
-            "Select a phar file to load", 
-            "", 
-            "", 
+        $dialog = new wxFileDialog(
+            $this,
+            "Select a phar file to load",
+            "",
+            "",
             "PHP Phar file|*.phar"
         );
 
@@ -261,8 +260,7 @@ class Window extends PharFrameTemplate
 
             wxMessageBox(
                 "In order to modify phar files you need to set "
-                . "phar.readonly to 0 on your php.ini",
-                "Warning"
+                . "phar.readonly to 0 on your php.ini", "Warning"
             );
         }
         else
@@ -277,31 +275,31 @@ class Window extends PharFrameTemplate
         $this->SetTitle($title . " - Phar GUI");
 
         $dialog->Destroy();
-	}
-    
+    }
+
     function OnMenuBuild($event)
     {
         $dir_dialog = new wxDirDialog(
-            $this, 
+            $this,
             "Select the directory that contains all the files that are "
             . "going to be added into the new phar file."
         );
-        
+
         if($dir_dialog->ShowModal() == wxID_CANCEL)
         {
             $dir_dialog->Destroy();
             return;
         }
-        
+
         $input = $dir_dialog->GetPath();
-        
+
         $dir_dialog->Destroy();
-        
-		$dialog = new wxFileDialog(
-            $this, 
-            "Select where to save the new phar file.", 
-            "", 
-            "", 
+
+        $dialog = new wxFileDialog(
+            $this,
+            "Select where to save the new phar file.",
+            "",
+            "",
             "PHP Phar file|*.phar",
             wxFD_SAVE
         );
@@ -311,20 +309,20 @@ class Window extends PharFrameTemplate
             $dialog->Destroy();
             return;
         }
-        
+
         $phar_file_path = $dialog->GetPath();
-        
+
         if(stripos($dialog->GetPath(), ".phar") === false)
         {
             $phar_file_path .= ".phar";
         }
-        
+
         $dialog->Destroy();
 
         $this->phar_file->Load($phar_file_path);
-        
+
         $this->phar_file->phar->buildFromDirectory($input . "/");
-        
+
         $this->phar_file->Load($phar_file_path);
 
         $this->ListFiles();
@@ -348,8 +346,7 @@ class Window extends PharFrameTemplate
 
             wxMessageBox(
                 "In order to modify phar files you need to set "
-                . "phar.readonly to 0 on your php.ini",
-                "Warning"
+                . "phar.readonly to 0 on your php.ini", "Warning"
             );
         }
         else
@@ -364,27 +361,27 @@ class Window extends PharFrameTemplate
         $this->SetTitle($title . " - Phar GUI");
 
         $dialog->Destroy();
-	}
+    }
 
     function OnMenuReload($event)
     {
         $this->phar_file->Load();
-		$this->ListFiles();
-	}
+        $this->ListFiles();
+    }
 
-	public function OnMenuPreferences($event)
+    public function OnMenuPreferences($event)
     {
         wxMessageBox("Not implemented yet");
-        
-		$event->Skip();
-	}
+
+        $event->Skip();
+    }
 
     function OnMenuExtract($event)
     {
         $this->OnExtractClick($event);
-	}
+    }
 
-	function OnMenuExtractAll($event)
+    function OnMenuExtractAll($event)
     {
         $dirDialog = new wxDirDialog(
             $this,
@@ -403,18 +400,18 @@ class Window extends PharFrameTemplate
         $dirDialog->Destroy();
 
         $this->phar_file->phar->extractTo($path);
-	}
+    }
 
-	public function OnMenuQuit($event)
+    public function OnMenuQuit($event)
     {
-		$this->Destroy();
-	}
+        $this->Destroy();
+    }
 
-	public function OnMenuAddDir($event)
+    public function OnMenuAddDir($event)
     {
         $dirDialog = new wxTextEntryDialog(
-            $this, 
-            "Enter a valid directory name.", 
+            $this,
+            "Enter a valid directory name.",
             "Add Empty Directory"
         );
 
@@ -461,9 +458,9 @@ class Window extends PharFrameTemplate
                     $this->phar_file->name . "/",
                     $itemdata->fileinfo->getPath()
                 );
-                
+
                 $current_item = $this->tree_ctrl->GetSelection();
-                
+
                 if(count($element) > 1)
                 {
                     $element = $element[1] . "/" . $path;
@@ -499,14 +496,12 @@ class Window extends PharFrameTemplate
                 new TreeData($this->phar_file->phar[$path])
             );
         }
-	}
+    }
 
-	public function OnMenuAddFile($event)
+    public function OnMenuAddFile($event)
     {
         $fileDialog = new wxFileDialog(
-            $this,
-            "Select the file to add",
-            "Add File"
+            $this, "Select the file to add", "Add File"
         );
 
         if($fileDialog->ShowModal() == wxID_CANCEL)
@@ -536,8 +531,7 @@ class Window extends PharFrameTemplate
                 )[1] . "/" . $name;
 
                 $this->phar_file->phar->addFile(
-                    $path,
-                    $element
+                    $path, $element
                 );
 
                 $this->tree_ctrl->AppendItem(
@@ -554,9 +548,9 @@ class Window extends PharFrameTemplate
                     $this->phar_file->name . "/",
                     $itemdata->fileinfo->getPath()
                 );
-                
+
                 $current_item = $this->tree_ctrl->GetSelection();
-                
+
                 if(count($element) > 1)
                 {
                     $element = $element[1] . "/" . $name;
@@ -568,8 +562,7 @@ class Window extends PharFrameTemplate
                 }
 
                 $this->phar_file->phar->addFile(
-                    $path,
-                    $element
+                    $path, $element
                 );
 
                 $this->tree_ctrl->AppendItem(
@@ -593,11 +586,11 @@ class Window extends PharFrameTemplate
                 new TreeData($this->phar_file->phar[$name])
             );
         }
-	}
+    }
 
-	public function OnMenuDelete($event)
+    public function OnMenuDelete($event)
     {
-		$itemdata = $this->tree_ctrl->GetItemData(
+        $itemdata = $this->tree_ctrl->GetItemData(
             $this->tree_ctrl->GetSelection()
         );
 
@@ -617,11 +610,11 @@ class Window extends PharFrameTemplate
                 );
             }
         }
-	}
+    }
 
     function OnMenuStub($event)
     {
-		$editor = new FileViewer($this);
+        $editor = new FileViewer($this);
 
         $stub = "";
 
@@ -629,7 +622,7 @@ class Window extends PharFrameTemplate
         {
             $stub .= $this->phar_file->phar->getStub();
         }
-        catch (Exception $ex)
+        catch(Exception $ex)
         {
             $stub = "#!/usr/bin/php\n"
                 . "<?php\n\n"
@@ -679,26 +672,25 @@ class Window extends PharFrameTemplate
                             $editor->editor->GetText()
                         );
                     }
-                    catch (Exception $ex)
+                    catch(Exception $ex)
                     {
                         wxMessageBox($ex->getMessage());
                     }
                 }
             }
         }
-	}
-    
+    }
+
     function OnMenuAlias($event)
     {
-		$dialog = new wxTextEntryDialog(
-            $this, 
+        $dialog = new wxTextEntryDialog(
+            $this,
             "Enter a valid alias for the file, eg: myphar-1.0.phar\n\n"
             . "This alias can be used when referring to the file using\n"
             . "the phar stream syntax, for example: \n\n"
-            . "phar://myphar-1.0.phar/somefile.php", 
-            "Phar Alias"
+            . "phar://myphar-1.0.phar/somefile.php", "Phar Alias"
         );
-        
+
         $dialog->SetValue($this->phar_file->phar->getAlias());
 
         if($dialog->ShowModal() == wxID_CANCEL)
@@ -710,11 +702,11 @@ class Window extends PharFrameTemplate
         $alias = $dialog->GetValue();
 
         $dialog->Destroy();
-        
-        $this->phar_file->phar->setAlias($alias);
-	}
 
-	public function OnMenuAbout($event)
+        $this->phar_file->phar->setAlias($alias);
+    }
+
+    public function OnMenuAbout($event)
     {
         $aboutinfo = new wxAboutDialogInfo();
 
@@ -734,12 +726,12 @@ class Window extends PharFrameTemplate
         $aboutinfo->AddDeveloper("Jefferson González <jgmdev@gmail.com>");
 
         wxAboutBox($aboutinfo);
-	}
+    }
 
     function OnTreeSelChanged(wxTreeEvent $event)
     {
-		$event->Skip();
-	}
+        $event->Skip();
+    }
 
     function OnTreeLeftClick($event)
     {
@@ -764,7 +756,7 @@ class Window extends PharFrameTemplate
 
             $filenameparts = explode(".", $itemdata->fileinfo->getFilename());
 
-            if(strtolower($filenameparts[count($filenameparts)-1]) == "php")
+            if(strtolower($filenameparts[count($filenameparts) - 1]) == "php")
             {
                 $editor->SetMode(FileViewer::MODE_PHP);
             }
@@ -775,9 +767,9 @@ class Window extends PharFrameTemplate
 
             $editor->Destroy();
         }
-	}
+    }
 
-	function OnTreeRightClick($event)
+    function OnTreeRightClick($event)
     {
         $itemdata = $this->tree_ctrl->GetItemData(
             $this->tree_ctrl->GetSelection()
@@ -789,30 +781,22 @@ class Window extends PharFrameTemplate
 
         $menu->Append(1, "Extract All");
         $menu->Connect(
-            1, 
-            wxEVT_COMMAND_MENU_SELECTED, 
-            array($this, "OnMenuExtractAll")
+            1, wxEVT_COMMAND_MENU_SELECTED, array($this, "OnMenuExtractAll")
         );
 
         $menu->Append(2, "Extract");
         $menu->Connect(
-            2, 
-            wxEVT_COMMAND_MENU_SELECTED, 
-            array($this, "OnExtractClick")
+            2, wxEVT_COMMAND_MENU_SELECTED, array($this, "OnExtractClick")
         );
 
         $menu->Append(3, "Add Directory");
         $menu->Connect(
-            3, 
-            wxEVT_COMMAND_MENU_SELECTED, 
-            array($this, "OnMenuAddDir")
+            3, wxEVT_COMMAND_MENU_SELECTED, array($this, "OnMenuAddDir")
         );
 
         $menu->Append(4, "Add File");
         $menu->Connect(
-            4, 
-            wxEVT_COMMAND_MENU_SELECTED, 
-            array($this, "OnMenuAddFile")
+            4, wxEVT_COMMAND_MENU_SELECTED, array($this, "OnMenuAddFile")
         );
 
         if(
@@ -824,14 +808,12 @@ class Window extends PharFrameTemplate
             $menu->Append(5, "Delete");
 
             $menu->Connect(
-                5,
-                wxEVT_COMMAND_MENU_SELECTED,
-                array($this, "OnMenuDelete")
+                5, wxEVT_COMMAND_MENU_SELECTED, array($this, "OnMenuDelete")
             );
         }
 
         $this->tree_ctrl->PopupMenu($menu);
-	}
+    }
 
     function OnExtractClick($event)
     {
@@ -888,4 +870,5 @@ class Window extends PharFrameTemplate
             }
         }
     }
+
 }

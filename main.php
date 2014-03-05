@@ -9,7 +9,7 @@
  * @link http://github.com/jgmdev/phar-gui Source code.
 */
 
-// Change to the directory that holds phargui 
+// Change to the directory that holds phargui
 // source files for correct initialization.
 chdir(__DIR__);
 
