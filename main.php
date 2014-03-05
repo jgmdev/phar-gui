@@ -1,4 +1,4 @@
-#!/usr/bin/php
+#!/usr/bin/php -d phar.readonly=0
 <?php
 /**
  * Graphical user interface to create and manage PHP phar files
