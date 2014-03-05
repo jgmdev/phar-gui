@@ -32,4 +32,5 @@ Download this source files to a directory on your machine and execute:
 ## Screenshots
 
 Main Window:
-![main window]()
+
+![main window](https://raw.github.com/jgmdev/phar-gui/master/screenshots/ss01.png)
