@@ -8,6 +8,7 @@
 namespace PharGUI;
 
 use wxMenu;
+use wxIcon;
 use wxBitmap;
 use wxTreeCtrl;
 use wxTreeEvent;
@@ -54,6 +55,8 @@ class Window extends PharFrameTemplate
     public function __construct($parent = null)
     {
         parent::__construct($parent);
+
+        $this->SetIcon(new wxIcon("images/icon.png", wxBITMAP_TYPE_PNG));
 
         $this->phar_file = new File;
 
@@ -593,7 +596,7 @@ class Window extends PharFrameTemplate
         $itemdata = $this->tree_ctrl->GetItemData(
             $this->tree_ctrl->GetSelection()
         );
-        
+
         if(!isset($itemdata->fileinfo))
         {
             return;
@@ -715,12 +718,12 @@ class Window extends PharFrameTemplate
     {
         $aboutinfo = new wxAboutDialogInfo();
 
-        $aboutinfo->SetName("Phar GUI");
-
         $aboutinfo->SetDescription(
             "Graphical user interface to create and manage PHP phar files. "
             . "This application was developed with wxPHP (http://wxphp.org)"
         );
+
+        $aboutinfo->SetIcon(new wxIcon("images/logo.png", wxBITMAP_TYPE_PNG));
 
         $aboutinfo->SetVersion("1.0");
 
@@ -729,6 +732,8 @@ class Window extends PharFrameTemplate
         $aboutinfo->SetWebSite("http://github.com/jgmdev/phar-gui");
 
         $aboutinfo->AddDeveloper("Jefferson González <jgmdev@gmail.com>");
+
+        $aboutinfo->AddArtist("Logo - Yaritza Luyando <yluyando@gmail.com>");
 
         wxAboutBox($aboutinfo);
     }
