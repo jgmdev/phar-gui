@@ -593,6 +593,11 @@ class Window extends PharFrameTemplate
         $itemdata = $this->tree_ctrl->GetItemData(
             $this->tree_ctrl->GetSelection()
         );
+        
+        if(!isset($itemdata->fileinfo))
+        {
+            return;
+        }
 
         /* @var $itemdata TreeData */
 
