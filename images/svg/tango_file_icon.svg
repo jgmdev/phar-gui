@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg249" viewBox="0 0 48 48">
+  <defs id="defs3">
+    <radialGradient id="radialGradient6719" xlink:href="#linearGradient5060" gradientUnits="userSpaceOnUse" cy="486.65" cx="605.71" gradientTransform="matrix(-2.7744 0 0 1.9697 112.76 -872.89)" r="117.14"/>
+    <linearGradient id="linearGradient5060">
+      <stop id="stop5062" offset="0"/>
+      <stop id="stop5064" stop-opacity="0" offset="1"/>
+    </linearGradient>
+    <radialGradient id="radialGradient6717" xlink:href="#linearGradient5060" gradientUnits="userSpaceOnUse" cy="486.65" cx="605.71" gradientTransform="matrix(2.7744 0 0 1.9697 -1891.6 -872.89)" r="117.14"/>
+    <linearGradient id="linearGradient6715" x1="302.86" gradientUnits="userSpaceOnUse" y1="366.65" gradientTransform="matrix(2.7744 0 0 1.9697 -1892.2 -872.89)" x2="302.86" y2="609.51">
+      <stop id="stop5050" stop-opacity="0" offset="0"/>
+      <stop id="stop5056" offset=".5"/>
+      <stop id="stop5052" stop-opacity="0" offset="1"/>
+    </linearGradient>
+    <radialGradient id="radialGradient15656" gradientUnits="userSpaceOnUse" cy="3.7561" cx="8.8244" gradientTransform="matrix(.96827 0 0 1.0328 3.3536 .64645)" r="37.752">
+      <stop id="stop270" stop-color="#a3a3a3" offset="0"/>
+      <stop id="stop271" stop-color="#4c4c4c" offset="1"/>
+    </radialGradient>
+    <radialGradient id="radialGradient15658" gradientUnits="userSpaceOnUse" cy="35.737" cx="33.967" gradientTransform="scale(.96049 1.0411)" r="86.708">
+      <stop id="stop260" stop-color="#fafafa" offset="0"/>
+      <stop id="stop261" stop-color="#bbb" offset="1"/>
+    </radialGradient>
+    <radialGradient id="radialGradient15668" gradientUnits="userSpaceOnUse" cy="7.2679" cx="8.1436" gradientTransform="matrix(.96827 0 0 1.0328 3.3536 .64645)" r="38.159">
+      <stop id="stop15664" stop-color="#fff" offset="0"/>
+      <stop id="stop15666" stop-color="#f8f8f8" offset="1"/>
+    </radialGradient>
+    <radialGradient id="radialGradient2283" gradientUnits="userSpaceOnUse" cy="114.57" cx="20.892" gradientTransform="matrix(.22970 0 0 .22970 4.6135 3.9798)" r="5.256">
+      <stop id="stop15566" stop-color="#F0F0F0" offset="0"/>
+      <stop id="stop15568" stop-color="#9a9a9a" offset="1"/>
+    </radialGradient>
+    <radialGradient id="radialGradient2285" gradientUnits="userSpaceOnUse" cy="64.568" cx="20.892" gradientTransform="matrix(.22970 0 0 .22970 4.6135 3.9798)" r="5.257">
+      <stop id="stop15573" stop-color="#F0F0F0" offset="0"/>
+      <stop id="stop15575" stop-color="#9a9a9a" offset="1"/>
+    </radialGradient>
+  </defs>
+  <g id="layer6">
+    <g id="g6707" transform="matrix(.021055 0 0 .020868 42.852 41.154)">
+      <rect id="rect6709" opacity=".40206" style="color:black" height="478.36" width="1339.6" y="-150.7" x="-1559.3" fill="url(#linearGradient6715)"/>
+      <path id="path6711" opacity=".40206" style="color:black" fill="url(#radialGradient6717)" d="m-219.62-150.68v478.33c142.88 0.9 345.4-107.17 345.4-239.2 0-132.02-159.44-239.13-345.4-239.13z"/>
+      <path id="path6713" opacity=".40206" style="color:black" fill="url(#radialGradient6719)" d="m-1559.3-150.68v478.33c-142.8 0.9-345.4-107.17-345.4-239.2 0-132.02 159.5-239.13 345.4-239.13z"/>
+    </g>
+  </g>
+  <g id="layer1">
+    <rect id="rect15391" stroke-linejoin="round" style="color:#000000" display="block" ry="1.149" height="40.92" width="34.875" stroke="url(#radialGradient15656)" stroke-linecap="round" y="3.6464" x="6.6036" fill="url(#radialGradient15658)"/>
+    <rect id="rect15660" stroke-linejoin="round" style="color:#000000" display="block" rx=".14905" ry=".14905" height="38.946" width="32.776" stroke="url(#radialGradient15668)" stroke-linecap="round" y="4.5839" x="7.6661" fill="none"/>
+    <g id="g2270" transform="translate(.64645 -.037989)">
+      <g id="g1440" stroke="#000" fill="#fff" transform="matrix(.22970 0 0 .22970 4.9671 4.245)">
+        <path id="path1448" d="m23.428 113.07c0 1.97-1.6 3.57-3.573 3.57-1.974 0-3.573-1.6-3.573-3.57s1.6-3.57 3.573-3.57 3.573 1.6 3.573 3.57z"/>
+        <path id="path1456" d="m23.428 63.07c0 1.973-1.6 3.573-3.573 3.573-1.974 0-3.573-1.6-3.573-3.573 0-1.974 1.6-3.573 3.573-3.573s3.573 1.6 3.573 3.573z"/>
+      </g>
+      <path id="path15570" d="m9.995 29.952c0 0.454-0.3675 0.821-0.8207 0.821-0.4535 0-0.8207-0.368-0.8207-0.821s0.3675-0.82 0.8207-0.82 0.8207 0.367 0.8207 0.82z" fill="url(#radialGradient2283)"/>
+      <path id="path15577" d="m9.995 18.467c0 0.453-0.3675 0.821-0.8207 0.821-0.4535 0-0.8207-0.368-0.8207-0.821s0.3675-0.821 0.8207-0.821 0.8207 0.368 0.8207 0.821z" fill="url(#radialGradient2285)"/>
+    </g>
+    <path id="path15672" d="m11.506 5.4943v37.907" stroke-opacity=".017544" stroke="#000" stroke-width=".98855" fill="none"/>
+    <path id="path15674" stroke="#fff" fill="none" stroke-opacity=".20468" d="m12.5 5.0205v38.018"/>
+  </g>
+  <g id="layer5">
+    <g id="g2253" transform="matrix(.90909 0 0 1 2.3636 0)" fill="#9b9b9b" fill-opacity=".54971">
+      <rect id="rect15686" style="color:#000000" display="block" rx=".15156" ry=".065391" height="1" width="22" y="9" x="15"/>
+      <rect id="rect15688" style="color:#000000" display="block" rx=".15156" ry=".065391" height="1" width="22" y="11" x="15"/>
+      <rect id="rect15690" style="color:#000000" display="block" rx=".15156" ry=".065391" height="1" width="22" y="13" x="15"/>
+      <rect id="rect15692" style="color:#000000" display="block" rx=".15156" ry=".065391" height="1" width="22" y="15" x="15"/>
+      <rect id="rect15694" style="color:#000000" display="block" rx=".15156" ry=".065391" height="1" width="22" y="17" x="15"/>
+      <rect id="rect15696" style="color:#000000" display="block" rx=".15156" ry=".065391" height="1" width="22" y="19" x="15"/>
+      <rect id="rect15698" style="color:#000000" display="block" rx=".15156" ry=".065391" height="1" width="22" y="21" x="15"/>
+      <rect id="rect15700" style="color:#000000" display="block" rx=".15156" ry=".065391" height="1" width="22" y="23" x="15"/>
+      <rect id="rect15732" style="color:#000000" display="block" rx=".068204" ry=".065391" height="1" width="9.9" y="25" x="15"/>
+      <rect id="rect15736" style="color:#000000" display="block" rx=".15156" ry=".065391" height="1" width="22" y="29" x="15"/>
+      <rect id="rect15738" style="color:#000000" display="block" rx=".15156" ry=".065391" height="1" width="22" y="31" x="15"/>
+      <rect id="rect15740" style="color:#000000" display="block" rx=".15156" ry=".065391" height="1" width="22" y="33" x="15"/>
+      <rect id="rect15742" style="color:#000000" display="block" rx=".15156" ry=".065391" height="1" width="22" y="35" x="15"/>
+      <rect id="rect15744" style="color:#000000" display="block" rx=".1061" ry=".065391" height="1" width="15.4" y="37" x="15"/>
+    </g>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>tango text x generic</dc:title>
+        <dc:date>2010-04-02T20:08:09</dc:date>
+        <dc:description>An icon from Tango Project. Since version 0.8.90 Tango Project icons are Public Domain: </dc:description>
+        <dc:source>http://openclipart.org/detail/36163/tango-text-x-generic-by-warszawianka</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>warszawianka</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>document</rdf:li>
+            <rdf:li>externalsource</rdf:li>
+            <rdf:li>icon</rdf:li>
+            <rdf:li>paper</rdf:li>
+            <rdf:li>sheet</rdf:li>
+            <rdf:li>tango</rdf:li>
+            <rdf:li>text</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
