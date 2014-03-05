@@ -2,7 +2,7 @@
 <?php
 /**
  * Graphical user interface to create and manage PHP phar files
-   developed with wxPHP (http://wxphp.org).
+ * developed with wxPHP (http://wxphp.org).
  *
  * @author Jefferson González
  * @license MIT
