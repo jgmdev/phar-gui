@@ -462,7 +462,9 @@ class Window extends PharFrameTemplate
                     $itemdata->fileinfo->getPath()
                 );
 
-                $current_item = $this->tree_ctrl->GetSelection();
+                $current_item = $this->tree_ctrl->GetItemParent(
+                    $this->tree_ctrl->GetSelection()
+                );
 
                 if(count($element) > 1)
                 {
