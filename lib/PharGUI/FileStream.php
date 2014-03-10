@@ -39,9 +39,7 @@ class FileStream extends wxInputStream
     {
         if(!feof($this->image))
         {
-            print "reading into buffer...\n";
             $buffer = fread($this->image, $bufsize);
-            print "finished...\n";
         }
         else
         {
