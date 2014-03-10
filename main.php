@@ -28,6 +28,8 @@ if(stripos(PHP_OS, "win") === false)
 include("resources.php");
 include("lib/autoload.php");
 
+wxInitAllImageHandlers();
+
 // Application initialization
 $phargui = new PharGUI\Window();
 

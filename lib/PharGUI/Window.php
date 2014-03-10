@@ -9,6 +9,7 @@ namespace PharGUI;
 
 use wxMenu;
 use wxIcon;
+use wxImage;
 use wxBitmap;
 use wxTreeCtrl;
 use wxTreeEvent;
@@ -56,15 +57,41 @@ class Window extends PharFrameTemplate
     {
         parent::__construct($parent);
 
-        $this->SetIcon(new wxIcon("images/icon.png", wxBITMAP_TYPE_PNG));
+        $icon = new wxIcon();
+        $icon->CopyFromBitmap(
+            new wxBitmap(
+                new wxImage(
+                    new FileStream("images/icon.png"), 
+                    wxBITMAP_TYPE_PNG
+                )
+            )
+        );
+        
+        $this->SetIcon($icon);
 
         $this->phar_file = new File;
 
         $this->tree_ctrl = &$this->m_treeCtrlFiles;
 
         $imagelist = new wxImageList(24, 24);
-        $imagelist->Add(new wxBitmap("images/folder.png", wxBITMAP_TYPE_PNG));
-        $imagelist->Add(new wxBitmap("images/file.png", wxBITMAP_TYPE_PNG));
+        
+        $imagelist->Add(
+            new wxBitmap(
+                new wxImage(
+                    new FileStream("images/folder.png"), 
+                    wxBITMAP_TYPE_PNG
+                )
+            )
+        );
+        
+        $imagelist->Add(
+            new wxBitmap(
+                new wxImage(
+                    new FileStream("images/file.png"), 
+                    wxBITMAP_TYPE_PNG
+                )
+            )
+        );
 
         $this->tree_ctrl->SetImageList($imagelist);
 
@@ -727,7 +754,17 @@ class Window extends PharFrameTemplate
             . "This application was developed with wxPHP (http://wxphp.org)"
         );
 
-        $aboutinfo->SetIcon(new wxIcon("images/logo.png", wxBITMAP_TYPE_PNG));
+        $icon = new wxIcon();
+        $icon->CopyFromBitmap(
+            new wxBitmap(
+                new wxImage(
+                    new FileStream("images/logo.png"), 
+                    wxBITMAP_TYPE_PNG
+                )
+            )
+        );
+        
+        $aboutinfo->SetIcon($icon);
 
         $aboutinfo->SetVersion("1.0");
 
