@@ -9,15 +9,17 @@
  * @link http://github.com/jgmdev/phar-gui Source code.
 */
 
+$load_parameters = "";
+
 //Try to load required libraries
 if(!extension_loaded('wxwidgets'))
 {
-    dl('wxwidgets.' . PHP_SHLIB_SUFFIX);
+    $load_parameters = "-d extension=wxwidgets." . PHP_SHLIB_SUFFIX . " ";
 }
 
 if(!extension_loaded('phar'))
 {
-    dl('phar.' . PHP_SHLIB_SUFFIX);
+    $load_parameters = "-d extension=phar." . PHP_SHLIB_SUFFIX . " ";
 }
 
 // Change to the directory that holds phargui
@@ -30,9 +32,14 @@ if(stripos(PHP_OS, "win") === false)
 {
     if(ini_get("phar.readonly") == 1)
     {
-        shell_exec("php -d phar.readonly=0 " . __FILE__ . " > /dev/null &");
+        shell_exec("php $load_parameters -d phar.readonly=0 " . __FILE__ . " > /dev/null &");
         exit;
     }
+}
+elseif($load_parameters != "")
+{
+    shell_exec("php $load_parameters " . __FILE__ . " > /dev/null &");
+    exit;
 }
 
 // Include files
