@@ -35,11 +35,11 @@ if(stripos(PHP_OS, "win") === false)
         shell_exec("php $load_parameters -d phar.readonly=0 " . __FILE__ . " > /dev/null &");
         exit;
     }
-}
-elseif($load_parameters != "")
-{
-    shell_exec("php $load_parameters " . __FILE__ . " > /dev/null &");
-    exit;
+    elseif($load_parameters != "")
+    {
+        shell_exec("php $load_parameters " . __FILE__ . " > /dev/null &");
+        exit;
+    }
 }
 
 // Include files
