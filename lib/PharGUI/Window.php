@@ -61,7 +61,7 @@ class Window extends PharFrameTemplate
         $icon->CopyFromBitmap(
             new wxBitmap(
                 new wxImage(
-                    new FileStream("images/icon.png"), 
+                    new FileStream(PHARGUI_HOME."/images/icon.png"),
                     wxBITMAP_TYPE_PNG
                 )
             )
@@ -78,7 +78,7 @@ class Window extends PharFrameTemplate
         $imagelist->Add(
             new wxBitmap(
                 new wxImage(
-                    new FileStream("images/folder.png"), 
+                    new FileStream(PHARGUI_HOME."/images/folder.png"),
                     wxBITMAP_TYPE_PNG
                 )
             )
@@ -87,7 +87,7 @@ class Window extends PharFrameTemplate
         $imagelist->Add(
             new wxBitmap(
                 new wxImage(
-                    new FileStream("images/file.png"), 
+                    new FileStream(PHARGUI_HOME."/images/file.png"),
                     wxBITMAP_TYPE_PNG
                 )
             )
@@ -758,7 +758,7 @@ class Window extends PharFrameTemplate
         $icon->CopyFromBitmap(
             new wxBitmap(
                 new wxImage(
-                    new FileStream("images/logo.png"), 
+                    new FileStream(PHARGUI_HOME."/images/logo.png"),
                     wxBITMAP_TYPE_PNG
                 )
             )
@@ -768,7 +768,7 @@ class Window extends PharFrameTemplate
 
         $aboutinfo->SetVersion("1.0");
 
-        $aboutinfo->SetLicence(file_get_contents("LICENSE.txt"));
+        $aboutinfo->SetLicence(file_get_contents(PHARGUI_HOME."/LICENSE.txt"));
 
         $aboutinfo->SetWebSite("http://github.com/jgmdev/phar-gui");
 
