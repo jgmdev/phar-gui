@@ -16,7 +16,7 @@ function phargui_autoloader($class_name)
     }
     else
     {
-        include('lib/'.$file);
+        include(__DIR__.'/'.$file);
     }
 }
 
