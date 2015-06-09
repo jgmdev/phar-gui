@@ -779,7 +779,7 @@ class Window extends PharFrameTemplate
         wxAboutBox($aboutinfo);
     }
 
-    function OnTreeSelChanged( $event)
+    function OnTreeSelChanged($event)
     {
         $event->Skip();
     }
