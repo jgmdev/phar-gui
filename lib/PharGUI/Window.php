@@ -812,8 +812,6 @@ class Window extends PharFrameTemplate
                 $editor->SetMode(FileViewer::MODE_PHP);
             }
 
-            $editor->Maximize(true);
-
             $editor->ShowModal();
 
             $editor->Destroy();

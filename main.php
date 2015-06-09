@@ -1,4 +1,4 @@
-#!/usr/bin/php -d phar.readonly=0
+#!/usr/bin/php
 <?php
 /**
  * Graphical user interface to create and manage PHP phar files
@@ -14,12 +14,17 @@ $load_parameters = "";
 //Try to load required libraries
 if(!extension_loaded('wxwidgets'))
 {
-    $load_parameters = "-d extension=wxwidgets." . PHP_SHLIB_SUFFIX . " ";
+    $load_parameters .= "-d extension=wxwidgets." . PHP_SHLIB_SUFFIX . " ";
 }
 
 if(!extension_loaded('phar'))
 {
-    $load_parameters = "-d extension=phar." . PHP_SHLIB_SUFFIX . " ";
+    $load_parameters .= "-d extension=phar." . PHP_SHLIB_SUFFIX . " ";
+}
+
+if(ini_get("phar.readonly") == 1)
+{
+    $load_parameters .= "-d phar.readonly=0 ";
 }
 
 // Change to the directory that holds phargui
@@ -28,18 +33,10 @@ chdir(__DIR__);
 
 // If not on windows and phar.readonly is set to 1 we reload PHP CLI with
 // phar.readonly set to 0 so writing and creating phar files is possible.
-if(stripos(PHP_OS, "win") === false)
+if(stripos(PHP_OS, "win") === false && $load_parameters != "")
 {
-    if(ini_get("phar.readonly") == 1)
-    {
-        shell_exec("php $load_parameters -d phar.readonly=0 " . __FILE__ . " > /dev/null &");
-        exit;
-    }
-    elseif($load_parameters != "")
-    {
-        shell_exec("php $load_parameters " . __FILE__ . " > /dev/null &");
-        exit;
-    }
+    shell_exec($_SERVER["_"] . " $load_parameters " . __FILE__ . " > /dev/null &");
+    exit;
 }
 
 // Include files

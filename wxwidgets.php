@@ -3154,7 +3154,6 @@ define('wxSOCKET_INPUT', 1);
 define('wxSOCKET_OUTPUT', 1);
 define('wxSOCKET_CONNECTION', 1);
 define('wxSOCKET_LOST', 1);
-define('wxTR_EXTENDED', 1);
 define('wxST_SIZEGRIP', 1);
 define('wxAUI_NB_BOTTOM', 1);
 define('wxAUI_NB_CLOSE_BUTTON', 1);
@@ -3344,7 +3343,6 @@ define('wxEVT_END_SESSION', 1);
 define('wxEVT_ENTER_WINDOW', 1);
 define('wxEVT_ERASE_BACKGROUND	', 1);
 define('wxEVT_GRID_CELL_BEGIN_DRAG', 1);
-define('wxEVT_GRID_CELL_CHANGE', 1);
 define('wxEVT_GRID_CELL_LEFT_CLICK', 1);
 define('wxEVT_GRID_CELL_LEFT_DCLICK', 1);
 define('wxEVT_GRID_CELL_RIGHT_CLICK', 1);
@@ -3471,6 +3469,7 @@ define('wxDIALOG_ADAPTATION_MODE_DEFAULT', 1);
 define('wxDIALOG_ADAPTATION_MODE_ENABLED', 1);
 define('wxDIALOG_ADAPTATION_MODE_DISABLED', 1);
 define('wxDragError', 1);
+define('wxDragNone', 1);
 define('wxDragCopy', 1);
 define('wxDragMove', 1);
 define('wxDragLink', 1);
@@ -3689,6 +3688,7 @@ define('wxPG_ACTION_PRESS_BUTTON', 1);
 define('wxPG_ACTION_MAX', 1);
 define('wxRichTextCtrlSelectionState_Normal', 1);
 define('wxRichTextCtrlSelectionState_CommonAncestor', 1);
+define('wxFLEX_GROWMODE_NONE', 1);
 define('wxFLEX_GROWMODE_SPECIFIED', 1);
 define('wxFLEX_GROWMODE_ALL', 1);
 define('wxSTREAM_NO_ERROR', 1);
@@ -3774,6 +3774,7 @@ define('wxAUI_DOCKART_BORDER_COLOUR', 1);
 define('wxAUI_DOCKART_GRIPPER_COLOUR', 1);
 define('wxAUI_DOCKART_CAPTION_FONT', 1);
 define('wxAUI_DOCKART_GRADIENT_TYPE', 1);
+define('wxAUI_GRADIENT_NONE', 1);
 define('wxAUI_GRADIENT_VERTICAL', 1);
 define('wxAUI_GRADIENT_HORIZONTAL', 1);
 define('wxAUI_BUTTON_STATE_NORMAL', 1);
@@ -3795,6 +3796,7 @@ define('wxAUI_BUTTON_DOWN', 1);
 define('wxAUI_BUTTON_CUSTOM1', 1);
 define('wxAUI_BUTTON_CUSTOM2', 1);
 define('wxAUI_BUTTON_CUSTOM3', 1);
+define('wxAUI_DOCK_NONE', 1);
 define('wxAUI_DOCK_TOP', 1);
 define('wxAUI_DOCK_RIGHT', 1);
 define('wxAUI_DOCK_BOTTOM', 1);
@@ -3828,6 +3830,7 @@ define('wxBRUSHSTYLE_HORIZONTAL_HATCH', 1);
 define('wxBRUSHSTYLE_VERTICAL_HATCH', 1);
 define('wxBRUSHSTYLE_FIRST_HATCH', 1);
 define('wxBRUSHSTYLE_LAST_HATCH', 1);
+define('wxCAL_BORDER_NONE', 1);
 define('wxCAL_BORDER_SQUARE', 1);
 define('wxCAL_BORDER_ROUND', 1);
 define('wxCAL_HITTEST_NOWHERE', 1);
@@ -3850,10 +3853,12 @@ define('wxCMD_LINE_VAL_STRING', 1);
 define('wxCMD_LINE_VAL_NUMBER', 1);
 define('wxCMD_LINE_VAL_DATE', 1);
 define('wxCMD_LINE_VAL_DOUBLE', 1);
+define('wxCMD_LINE_VAL_NONE', 1);
 define('wxCMD_LINE_SWITCH', 1);
 define('wxCMD_LINE_OPTION', 1);
 define('wxCMD_LINE_PARAM', 1);
 define('wxCMD_LINE_USAGE_TEXT', 1);
+define('wxCMD_LINE_NONE', 1);
 define('wxCMD_SWITCH_OFF', 1);
 define('wxCMD_SWITCH_ON', 1);
 define('wxCMD_LINE_SPLIT_DOS', 1);
@@ -3873,13 +3878,16 @@ define('wxPRINTBIN_LARGECAPACITY', 1);
 define('wxPRINTBIN_CASSETTE', 1);
 define('wxPRINTBIN_FORMSOURCE', 1);
 define('wxPRINTBIN_USER', 1);
+define('wxELLIPSIZE_FLAGS_NONE', 1);
 define('wxELLIPSIZE_FLAGS_PROCESS_MNEMONICS', 1);
 define('wxELLIPSIZE_FLAGS_EXPAND_TABS', 1);
 define('wxELLIPSIZE_FLAGS_DEFAULT', 1);
+define('wxELLIPSIZE_NONE', 1);
 define('wxELLIPSIZE_START', 1);
 define('wxELLIPSIZE_MIDDLE', 1);
 define('wxELLIPSIZE_END', 1);
 define('wxBOM_Unknown', 1);
+define('wxBOM_None', 1);
 define('wxBOM_UTF32BE', 1);
 define('wxBOM_UTF32LE', 1);
 define('wxBOM_UTF16BE', 1);
@@ -3938,6 +3946,7 @@ define('wxSHAPED', 1);
 define('wxTILE', 1);
 define('wxSTRETCH_MASK', 1);
 define('wxBORDER_DEFAULT', 1);
+define('wxBORDER_NONE', 1);
 define('wxBORDER_STATIC', 1);
 define('wxBORDER_SIMPLE', 1);
 define('wxBORDER_RAISED', 1);
@@ -3952,6 +3961,7 @@ define('wxBG_STYLE_COLOUR', 1);
 define('wxBG_STYLE_TRANSPARENT', 1);
 define('wxID_AUTO_LOWEST', 1);
 define('wxID_AUTO_HIGHEST', 1);
+define('wxID_NONE', 1);
 define('wxID_SEPARATOR', 1);
 define('wxID_ANY', 1);
 define('wxID_LOWEST', 1);
@@ -4127,6 +4137,7 @@ define('wxDF_LOCALE', 1);
 define('wxDF_PRIVATE', 1);
 define('wxDF_HTML', 1);
 define('wxDF_MAX', 1);
+define('WXK_NONE', 1);
 define('WXK_CONTROL_A', 1);
 define('WXK_CONTROL_B', 1);
 define('WXK_CONTROL_C', 1);
@@ -4277,6 +4288,7 @@ define('WXK_SPECIAL17', 1);
 define('WXK_SPECIAL18', 1);
 define('WXK_SPECIAL19', 1);
 define('WXK_SPECIAL20', 1);
+define('wxMOD_NONE', 1);
 define('wxMOD_ALT', 1);
 define('wxMOD_CONTROL', 1);
 define('wxMOD_ALTGR', 1);
@@ -4371,6 +4383,7 @@ define('wxPAPER_LETTER_EXTRA_TRANSVERSE', 1);
 define('wxPAPER_LETTER_PLUS', 1);
 define('wxPAPER_LETTER_ROTATED', 1);
 define('wxPAPER_LETTER_TRANSVERSE', 1);
+define('wxPAPER_NONE', 1);
 define('wxPAPER_NOTE', 1);
 define('wxPAPER_P16K', 1);
 define('wxPAPER_P16K_ROTATED', 1);
@@ -4407,10 +4420,12 @@ define('wxLANDSCAPE', 1);
 define('wxDUPLEX_SIMPLEX', 1);
 define('wxDUPLEX_HORIZONTAL', 1);
 define('wxDUPLEX_VERTICAL', 1);
+define('wxPRINT_MODE_NONE', 1);
 define('wxPRINT_MODE_PREVIEW', 1);
 define('wxPRINT_MODE_FILE', 1);
 define('wxPRINT_MODE_PRINTER', 1);
 define('wxPRINT_MODE_STREAM', 1);
+define('wxUPDATE_UI_NONE', 1);
 define('wxUPDATE_UI_RECURSE', 1);
 define('wxUPDATE_UI_FROMIDLE', 1);
 define('wxDIR_IGNORE', 1);
@@ -4426,6 +4441,7 @@ define('wxDL_LIBRARY', 1);
 define('wxDL_MODULE', 1);
 define('wxDL_PLUGIN_GUI', 1);
 define('wxDL_PLUGIN_BASE', 1);
+define('wxEVENT_PROPAGATE_NONE', 1);
 define('wxEVENT_PROPAGATE_MAX', 1);
 define('wxEVT_CATEGORY_UI', 1);
 define('wxEVT_CATEGORY_USER_INPUT', 1);
@@ -4511,6 +4527,7 @@ define('wxFSW_EVENT_UNMOUNT', 1);
 define('wxFSW_EVENT_WARNING', 1);
 define('wxFSW_EVENT_ERROR', 1);
 define('wxFSW_EVENT_ALL', 1);
+define('wxFSW_WARNING_NONE', 1);
 define('wxFSW_WARNING_GENERAL', 1);
 define('wxFSW_WARNING_OVERFLOW', 1);
 define('wxBITMAP_TYPE_INVALID', 1);
@@ -4556,8 +4573,10 @@ define('wxOutLeft', 1);
 define('wxOutRight', 1);
 define('wxOutTop', 1);
 define('wxOutBottom', 1);
+define('wxANTIALIAS_NONE', 1);
 define('wxANTIALIAS_DEFAULT', 1);
 define('wxINTERPOLATION_DEFAULT', 1);
+define('wxINTERPOLATION_NONE', 1);
 define('wxINTERPOLATION_FAST', 1);
 define('wxINTERPOLATION_GOOD', 1);
 define('wxINTERPOLATION_BEST', 1);
@@ -4589,6 +4608,7 @@ define('wxHTML_URL_OTHER', 1);
 define('wxHTML_OPEN', 1);
 define('wxHTML_BLOCK', 1);
 define('wxHTML_REDIRECT', 1);
+define('wxIMAGE_RESOLUTION_NONE', 1);
 define('wxIMAGE_RESOLUTION_INCHES', 1);
 define('wxIMAGE_RESOLUTION_CM', 1);
 define('wxIMAGE_QUALITY_NEAREST', 1);
@@ -4912,6 +4932,7 @@ define('wxSameAs', 1);
 define('wxAbsolute', 1);
 define('wxLAYOUT_HORIZONTAL', 1);
 define('wxLAYOUT_VERTICAL', 1);
+define('wxLAYOUT_NONE', 1);
 define('wxLAYOUT_TOP', 1);
 define('wxLAYOUT_LEFT', 1);
 define('wxLAYOUT_RIGHT', 1);
@@ -4919,7 +4940,12 @@ define('wxLAYOUT_BOTTOM', 1);
 define('wxMEDIASTATE_STOPPED', 1);
 define('wxMEDIASTATE_PAUSED', 1);
 define('wxMEDIASTATE_PLAYING', 1);
+define('wxMEDIACTRLPLAYERCONTROLS_NONE', 1);
+define('wxMEDIACTRLPLAYERCONTROLS_STEP', 1);
+define('wxMEDIACTRLPLAYERCONTROLS_VOLUME', 1);
+define('wxMEDIACTRLPLAYERCONTROLS_DEFAULT', 1);
 define('wxMOUSE_BTN_ANY', 1);
+define('wxMOUSE_BTN_NONE', 1);
 define('wxMOUSE_BTN_LEFT', 1);
 define('wxMOUSE_BTN_MIDDLE', 1);
 define('wxMOUSE_BTN_RIGHT', 1);
@@ -4962,6 +4988,7 @@ define('wxCAP_INVALID', 1);
 define('wxCAP_ROUND', 1);
 define('wxCAP_PROJECTING', 1);
 define('wxCAP_BUTT', 1);
+define('wxSHOW_EFFECT_NONE', 1);
 define('wxSHOW_EFFECT_ROLL_TO_LEFT', 1);
 define('wxSHOW_EFFECT_ROLL_TO_RIGHT', 1);
 define('wxSHOW_EFFECT_ROLL_TO_TOP', 1);
@@ -5090,6 +5117,7 @@ define('wxTITLEBAR_BUTTON_MAXIMIZE', 1);
 define('wxTITLEBAR_BUTTON_ICONIZE', 1);
 define('wxTITLEBAR_BUTTON_RESTORE', 1);
 define('wxTITLEBAR_BUTTON_HELP', 1);
+define('wxHDR_SORT_ICON_NONE', 1);
 define('wxHDR_SORT_ICON_UP', 1);
 define('wxHDR_SORT_ICON_DOWN', 1);
 define('wxRIBBON_ART_TAB_SEPARATION_SIZE', 1);
@@ -5230,6 +5258,7 @@ define('wxRICHTEXT_TYPE_XML', 1);
 define('wxRICHTEXT_TYPE_HTML', 1);
 define('wxRICHTEXT_TYPE_RTF', 1);
 define('wxRICHTEXT_TYPE_PDF', 1);
+define('wxRICHTEXT_HITTEST_NONE', 1);
 define('wxRICHTEXT_HITTEST_BEFORE', 1);
 define('wxRICHTEXT_HITTEST_AFTER', 1);
 define('wxRICHTEXT_HITTEST_ON', 1);
@@ -5254,6 +5283,7 @@ define('wxTEXT_BOX_ATTR_POSITION_RELATIVE', 1);
 define('wxTEXT_BOX_ATTR_POSITION_ABSOLUTE', 1);
 define('wxTEXT_BOX_ATTR_POSITION_FIXED', 1);
 define('wxTEXT_BOX_ATTR_POSITION_MASK', 1);
+define('wxTEXT_BOX_ATTR_BORDER_NONE', 1);
 define('wxTEXT_BOX_ATTR_BORDER_SOLID', 1);
 define('wxTEXT_BOX_ATTR_BORDER_DOTTED', 1);
 define('wxTEXT_BOX_ATTR_BORDER_DASHED', 1);
@@ -5267,12 +5297,16 @@ define('wxTEXT_BOX_ATTR_BORDER_COLOUR', 1);
 define('wxTEXT_BOX_ATTR_BORDER_THIN', 1);
 define('wxTEXT_BOX_ATTR_BORDER_MEDIUM', 1);
 define('wxTEXT_BOX_ATTR_BORDER_THICK', 1);
+define('wxTEXT_BOX_ATTR_FLOAT_NONE', 1);
 define('wxTEXT_BOX_ATTR_FLOAT_LEFT', 1);
 define('wxTEXT_BOX_ATTR_FLOAT_RIGHT', 1);
+define('wxTEXT_BOX_ATTR_CLEAR_NONE', 1);
 define('wxTEXT_BOX_ATTR_CLEAR_LEFT', 1);
 define('wxTEXT_BOX_ATTR_CLEAR_RIGHT', 1);
 define('wxTEXT_BOX_ATTR_CLEAR_BOTH', 1);
+define('wxTEXT_BOX_ATTR_COLLAPSE_NONE', 1);
 define('wxTEXT_BOX_ATTR_COLLAPSE_FULL', 1);
+define('wxTEXT_BOX_ATTR_VERTICAL_ALIGNMENT_NONE', 1);
 define('wxTEXT_BOX_ATTR_VERTICAL_ALIGNMENT_TOP', 1);
 define('wxTEXT_BOX_ATTR_VERTICAL_ALIGNMENT_CENTRE', 1);
 define('wxTEXT_BOX_ATTR_VERTICAL_ALIGNMENT_BOTTOM', 1);
@@ -5287,6 +5321,7 @@ define('wxRICHTEXT_PAGE_ALL', 1);
 define('wxRICHTEXT_PAGE_LEFT', 1);
 define('wxRICHTEXT_PAGE_CENTRE', 1);
 define('wxRICHTEXT_PAGE_RIGHT', 1);
+define('wxTipKind_None', 1);
 define('wxTipKind_TopLeft', 1);
 define('wxTipKind_Top', 1);
 define('wxTipKind_TopRight', 1);
@@ -5298,6 +5333,7 @@ define('wxSASH_TOP', 1);
 define('wxSASH_RIGHT', 1);
 define('wxSASH_BOTTOM', 1);
 define('wxSASH_LEFT', 1);
+define('wxSASH_NONE', 1);
 define('wxSASH_STATUS_OK', 1);
 define('wxSASH_STATUS_OUT_OF_RANGE', 1);
 define('wxSHOW_SB_NEVER', 1);
@@ -5390,6 +5426,7 @@ define('wxSYS_DCLICK_MSEC', 1);
 define('wxSYS_CAN_DRAW_FRAME_DECORATIONS', 1);
 define('wxSYS_CAN_ICONIZE_FRAME', 1);
 define('wxSYS_TABLET_PRESENT', 1);
+define('wxSYS_SCREEN_NONE', 1);
 define('wxSYS_SCREEN_TINY', 1);
 define('wxSYS_SCREEN_PDA', 1);
 define('wxSYS_SCREEN_SMALL', 1);
@@ -5469,6 +5506,7 @@ define('wxTEXT_ATTR_OUTLINE_LEVEL', 1);
 define('wxTEXT_ATTR_CHARACTER', 1);
 define('wxTEXT_ATTR_PARAGRAPH', 1);
 define('wxTEXT_ATTR_ALL', 1);
+define('wxTEXT_ATTR_BULLET_STYLE_NONE', 1);
 define('wxTEXT_ATTR_BULLET_STYLE_ARABIC', 1);
 define('wxTEXT_ATTR_BULLET_STYLE_LETTERS_UPPER', 1);
 define('wxTEXT_ATTR_BULLET_STYLE_LETTERS_LOWER', 1);
@@ -5485,6 +5523,7 @@ define('wxTEXT_ATTR_BULLET_STYLE_ALIGN_LEFT', 1);
 define('wxTEXT_ATTR_BULLET_STYLE_ALIGN_RIGHT', 1);
 define('wxTEXT_ATTR_BULLET_STYLE_ALIGN_CENTRE', 1);
 define('wxTEXT_ATTR_BULLET_STYLE_CONTINUATION', 1);
+define('wxTEXT_ATTR_EFFECT_NONE', 1);
 define('wxTEXT_ATTR_EFFECT_CAPITALS', 1);
 define('wxTEXT_ATTR_EFFECT_SMALL_CAPITALS', 1);
 define('wxTEXT_ATTR_EFFECT_STRIKETHROUGH', 1);
@@ -5503,6 +5542,7 @@ define('wxTE_HT_BEFORE', 1);
 define('wxTE_HT_ON_TEXT', 1);
 define('wxTE_HT_BELOW', 1);
 define('wxTE_HT_BEYOND', 1);
+define('wxTextFileType_None', 1);
 define('wxTextFileType_Unix', 1);
 define('wxTextFileType_Dos', 1);
 define('wxTextFileType_Mac', 1);
@@ -5533,6 +5573,7 @@ define('wxURL_NOHOST', 1);
 define('wxURL_NOPATH', 1);
 define('wxURL_CONNERR', 1);
 define('wxURL_PROTOERR', 1);
+define('wxSIGNONE', 1);
 define('wxSIGHUP', 1);
 define('wxSIGINT', 1);
 define('wxSIGQUIT', 1);
@@ -5563,7 +5604,9 @@ define('wxNUM_VAL_DEFAULT', 1);
 define('wxNUM_VAL_THOUSANDS_SEPARATOR', 1);
 define('wxNUM_VAL_ZERO_AS_BLANK', 1);
 define('wxNUM_VAL_NO_TRAILING_ZEROES', 1);
+define('wxFILTER_NONE', 1);
 define('wxFILTER_EMPTY', 1);
+define('wxFILTER_ASCII', 1);
 define('wxFILTER_ALPHA', 1);
 define('wxFILTER_ALPHANUMERIC', 1);
 define('wxFILTER_DIGITS', 1);
@@ -5608,6 +5651,7 @@ define('wxXML_DOCUMENT_TYPE_NODE', 1);
 define('wxXML_DOCUMENT_FRAG_NODE', 1);
 define('wxXML_NOTATION_NODE', 1);
 define('wxXML_HTML_DOCUMENT_NODE', 1);
+define('wxXMLDOC_NONE', 1);
 define('wxXMLDOC_KEEP_WHITESPACE_NODES', 1);
 define('wxXRC_USE_LOCALE', 1);
 define('wxXRC_NO_SUBCLASSING', 1);
@@ -5846,6 +5890,21 @@ define('wxTRANSPARENT_BRUSH', 1);
 define('wxCYAN_BRUSH', 1);
 define('wxRED_BRUSH', 1);
 define('wxTheBrushList', 1);
+define('wxEVT_AUINOTEBOOK_PAGE_CLOSE', 1);
+define('wxEVT_AUINOTEBOOK_PAGE_CHANGED', 1);
+define('wxEVT_AUINOTEBOOK_PAGE_CHANGING', 1);
+define('wxEVT_AUINOTEBOOK_PAGE_CLOSED', 1);
+define('wxEVT_AUINOTEBOOK_BUTTON', 1);
+define('wxEVT_AUINOTEBOOK_BEGIN_DRAG', 1);
+define('wxEVT_AUINOTEBOOK_END_DRAG', 1);
+define('wxEVT_AUINOTEBOOK_DRAG_MOTION', 1);
+define('wxEVT_AUINOTEBOOK_ALLOW_DND', 1);
+define('wxEVT_AUINOTEBOOK_TAB_MIDDLE_DOWN', 1);
+define('wxEVT_AUINOTEBOOK_TAB_MIDDLE_UP', 1);
+define('wxEVT_AUINOTEBOOK_TAB_RIGHT_DOWN', 1);
+define('wxEVT_AUINOTEBOOK_TAB_RIGHT_UP', 1);
+define('wxEVT_AUINOTEBOOK_DRAG_DONE', 1);
+define('wxEVT_AUINOTEBOOK_BG_DCLICK', 1);
 define('wxEVT_CALENDAR_SEL_CHANGED', 1);
 define('wxEVT_CALENDAR_PAGE_CHANGED', 1);
 define('wxEVT_CALENDAR_DOUBLECLICKED', 1);
@@ -6790,7 +6849,7 @@ function wxIsNullDouble($x){}
  * @param integer $y
  * @return integer
  */
-function wxMessageBox($message, $caption=wxMessageBoxCaptionStr, $style=wxOK, wxWindow &$parent=null, $x=wxDefaultCoord, $y=wxDefaultCoord){}
+function wxMessageBox($message, $caption, $style, wxWindow &$parent, $x, $y){}
 
 /**
  * Shows a dialog asking the user for numeric input.
@@ -7952,12 +8011,6 @@ class wxArtProvider extends wxObject
 	 * @return bool
 	 */
 	 static function Pop(){}
-
-	/**
-	 * Insert
-	 * @param wxArtProvider $provider
-	 */
-	 static function Insert(wxArtProvider &$provider){}
 
 	/**
 	 * Returns true if the platform uses native icons provider that should take precedence over any customizations.
@@ -11804,6 +11857,12 @@ class wxClipboard extends wxObject
 	function Flush(){}
 
 	/**
+	 * Returns the global instance (wxTheClipboard) of the clipboard object.
+	 * @return wxClipboard
+	 */
+	 static function Get(){}
+
+	/**
 	 * Call this function to fill data with data on the clipboard, if available in the required format.
 	 * @param wxDataObject $data
 	 * @return bool
@@ -12518,12 +12577,6 @@ class wxComboCtrl extends wxTextEntry
 	function GetTextCtrl(){}
 
 	/**
-	 * Returns actual indentation in pixels.
-	 * @return integer
-	 */
-	function GetTextIndent(){}
-
-	/**
 	 * Returns area covered by the text field (includes everything except borders and the dropdown button).
 	 * @return wxRect
 	 */
@@ -12534,12 +12587,6 @@ class wxComboCtrl extends wxTextEntry
 	 * @return string
 	 */
 	function GetValue(){}
-
-	/**
-	 * Dismisses the popup window.
-	 * @param bool $generateEvent
-	 */
-	function HidePopup($generateEvent=false){}
 
 	/**
 	 * Returns true if the popup is currently shown.
@@ -12687,21 +12734,10 @@ class wxComboCtrl extends wxTextEntry
 	function SetTextCtrlStyle($style){}
 
 	/**
-	 * This will set the space in pixels between left edge of the control and the text, regardless whether control is read-only or not.
-	 * @param integer $indent
-	 */
-	function SetTextIndent($indent){}
-
-	/**
 	 * Sets the text for the combo control text field.
 	 * @param string $value
 	 */
 	function SetValue($value){}
-
-	/**
-	 * Show the popup.
-	 */
-	function ShowPopup(){}
 
 	/**
 	 * Undoes the last edit in the text field.
@@ -14799,17 +14835,6 @@ class wxDataViewCustomRenderer extends wxDataViewRenderer
 	 * @param integer $state
 	 */
 	function RenderText($text, $xoffset, wxRect $cell, wxDC &$dc, $state){}
-
-	/**
-	 * Override this to react to a left click.
-	 * @param wxPoint $cursor
-	 * @param wxRect $cell
-	 * @param wxDataViewModel $model
-	 * @param wxDataViewItem $item
-	 * @param integer $col
-	 * @return bool
-	 */
-	function LeftClick(wxPoint $cursor, wxRect $cell, wxDataViewModel &$model, wxDataViewItem $item, $col){}
 
 	/**
 	 * Override this to start a drag operation.
@@ -21523,9 +21548,8 @@ class wxGrid extends wxScrolledWindow
 	 * @param integer $col
 	 * @param string $s
 	 * @param wxGridCellCoords $coords
-	 * @param string $val
 	 */
-	function SetCellValue($row, $col, $s, wxGridCellCoords $coords, $s, $val, $row, $col){}
+	function SetCellValue($row, $col, $s, wxGridCellCoords $coords, $s){}
 
 	/**
 	 * Sets the cell attributes for all cells in the specified column.
@@ -24838,24 +24862,6 @@ class wxHtmlTag
 	function GetAllParams(){}
 
 	/**
-	 * Returns beginning position of the text between this tag and paired ending tag.
-	 * @return integer
-	 */
-	function GetBeginPos(){}
-
-	/**
-	 * Returns ending position of the text between this tag and paired ending tag.
-	 * @return integer
-	 */
-	function GetEndPos1(){}
-
-	/**
-	 * Returns ending position 2 of the text between this tag and paired ending tag.
-	 * @return integer
-	 */
-	function GetEndPos2(){}
-
-	/**
 	 * Returns tag's name.
 	 * @return string
 	 */
@@ -26498,9 +26504,11 @@ class wxInputStream extends wxStreamBase
 	/**
 	 * Reads data from the input queue and stores it in the specified output stream.
 	 * @param wxOutputStream $stream_out
+	 * @param mixed $buffer
+	 * @param integer $size
 	 * @return wxInputStream
 	 */
-	function Read(wxOutputStream &$stream_out){}
+	function Read(wxOutputStream &$stream_out, $buffer, $size){}
 
 	/**
 	 * Changes the stream current position.
@@ -26705,12 +26713,6 @@ class wxKeyboardState
 	 * @return bool
 	 */
 	function AltDown(){}
-
-	/**
-	 * Returns true if the key used for command accelerators is pressed.
-	 * @return bool
-	 */
-	function CmdDown(){}
 
 	/**
 	 * Returns true if the Control key or Apple/Command key under OS X is pressed.
@@ -28838,13 +28840,6 @@ class wxMenuBar extends wxWindow
 	function GetLabel($id){}
 
 	/**
-	 * Returns the label of a top-level menu.
-	 * @param integer $pos
-	 * @return string
-	 */
-	function GetLabelTop($pos){}
-
-	/**
 	 * Returns the menu at menuIndex (zero-based).
 	 * @param integer $menuIndex
 	 * @return wxMenu
@@ -28942,13 +28937,6 @@ class wxMenuBar extends wxWindow
 	 * @param integer $pos
 	 * @param string $label
 	 */
-	function SetLabelTop($pos, $label){}
-
-	/**
-	 * Sets the label of a top-level menu.
-	 * @param integer $pos
-	 * @param string $label
-	 */
 	function SetMenuLabel($pos, $label){}
 }
 
@@ -29037,19 +29025,6 @@ class wxMenuItem extends wxObject
 	function GetKind(){}
 
 	/**
-	 * Returns the text associated with the menu item without any accelerator characters it might contain.
-	 * @return string
-	 */
-	function GetLabel(){}
-
-	/**
-	 * GetLabelFromText
-	 * @param string $text
-	 * @return string
-	 */
-	 static function GetLabelFromText($text){}
-
-	/**
 	 * Strips all accelerator characters and mnemonics from the given text.
 	 * @param string $text
 	 * @return string
@@ -29063,22 +29038,10 @@ class wxMenuItem extends wxObject
 	function GetMenu(){}
 
 	/**
-	 * Returns the text associated with the menu item.
-	 * @return string
-	 */
-	function GetName(){}
-
-	/**
 	 * Returns the submenu associated with the menu item, or NULL if there isn't one.
 	 * @return wxMenu
 	 */
 	function GetSubMenu(){}
-
-	/**
-	 * Returns the text associated with the menu item, such as it was passed to the wxMenuItem constructor, i.e.
-	 * @return string
-	 */
-	function GetText(){}
 
 	/**
 	 * Returns true if the item is checkable.
@@ -29139,12 +29102,6 @@ class wxMenuItem extends wxObject
 	 * @param wxMenu $menu
 	 */
 	function SetSubMenu(wxMenu &$menu){}
-
-	/**
-	 * Sets the text associated with the menu item.
-	 * @param string $text
-	 */
-	function SetText($text){}
 }
 
 class wxMessageDialog extends wxDialog
@@ -30015,6 +29972,12 @@ class wxNavigationKeyEvent extends wxEvent
 
 class wxNonOwnedWindow extends wxWindow
 {
+	/**
+	 * If the platform supports it, sets the shape of the window to that depicted by region.
+	 * @param wxRegion $region
+	 * @return bool
+	 */
+	function SetShape(wxRegion $region){}
 }
 
 class wxNotebook extends wxBookCtrlBase
@@ -30284,12 +30247,14 @@ class wxOutputStream extends wxStreamBase
 	/**
 	 * Reads data from the specified input stream and stores them in the current stream.
 	 * @param wxInputStream $stream_in
+	 * @param mixed $buffer
+	 * @param integer $size
 	 * @return wxOutputStream
 	 */
-	function Write(wxInputStream &$stream_in){}
+	function Write(wxInputStream &$stream_in, $buffer, $size){}
 }
 
-class wxPageSetupDialog extends wxDialog
+class wxPageSetupDialog extends wxObject
 {
 	/**
 	 * Constructor.
@@ -31624,20 +31589,26 @@ class wxPrintData extends wxObject
 	function SetQuality($quality){}
 }
 
-class wxPrintDialog extends wxDialog
+class wxPrintDialog extends wxObject
 {
 	/**
 	 * Constructor.
 	 * @param wxWindow $parent
 	 * @param wxPrintDialogData $data
 	 */
-	function wxPrintDialog(wxWindow &$parent, wxPrintDialogData &$data=null){}
+	function wxPrintDialog(wxWindow &$parent, wxPrintDialogData &$data=null, wxWindow &$parent, wxPrintData &$data){}
 
 	/**
 	 * Returns the device context created by the print dialog, if any.
 	 * @return wxDC
 	 */
 	function GetPrintDC(){}
+
+	/**
+	 * Returns the print data associated with the print dialog.
+	 * @return wxPrintData
+	 */
+	function GetPrintData(){}
 
 	/**
 	 * Returns the print dialog data associated with the print dialog.
@@ -34706,8 +34677,237 @@ class wxScrollWinEvent extends wxEvent
 	function SetPosition($pos){}
 }
 
+class wxScrolled
+{
+	/**
+	 * Default constructor.
+	 * @param wxWindow $parent
+	 * @param integer $id
+	 * @param wxPoint $pos
+	 * @param wxSize $size
+	 * @param integer $style
+	 * @param string $name
+	 */
+	function wxScrolled(wxWindow &$parent, $id=-1, wxPoint $pos=null, wxSize $size=null, $style=null, $name="scrolledWindow"){}
+
+	/**
+	 * AdjustScrollbars
+	 */
+	function AdjustScrollbars(){}
+
+	/**
+	 * CalcScrolledPosition
+	 * @param wxPoint $pt
+	 * @param integer $x
+	 * @param integer $y
+	 * @param integer $xx
+	 * @param integer $yy
+	 */
+	function CalcScrolledPosition(wxPoint $pt, $x, $y, &$xx, &$yy){}
+
+	/**
+	 * CalcUnscrolledPosition
+	 * @param wxPoint $pt
+	 * @param integer $x
+	 * @param integer $y
+	 * @param integer $xx
+	 * @param integer $yy
+	 */
+	function CalcUnscrolledPosition(wxPoint $pt, $x, $y, &$xx, &$yy){}
+
+	/**
+	 * Disable use of keyboard keys for scrolling.
+	 */
+	function DisableKeyboardScrolling(){}
+
+	/**
+	 * Call this function to prepare the device context for drawing a scrolled image.
+	 * @param wxDC $dc
+	 */
+	function DoPrepareDC(wxDC &$dc){}
+
+	/**
+	 * Enable or disable use of wxWindow::ScrollWindow() for scrolling.
+	 * @param bool $xScrolling
+	 * @param bool $yScrolling
+	 */
+	function EnableScrolling($xScrolling, $yScrolling){}
+
+	/**
+	 * GetScaleX
+	 * @return float
+	 */
+	function GetScaleX(){}
+
+	/**
+	 * GetScaleY
+	 * @return float
+	 */
+	function GetScaleY(){}
+
+	/**
+	 * GetScrollLines
+	 * @param integer $orient
+	 * @return integer
+	 */
+	function GetScrollLines($orient){}
+
+	/**
+	 * GetScrollPageSize
+	 * @param integer $orient
+	 * @return integer
+	 */
+	function GetScrollPageSize($orient){}
+
+	/**
+	 * Get the number of pixels per scroll unit (line), in each direction, as set by SetScrollbars().
+	 * @param integer $xUnit
+	 * @param integer $yUnit
+	 */
+	function GetScrollPixelsPerUnit(&$xUnit, &$yUnit){}
+
+	/**
+	 * Function which must be overridden to implement the size available for the scroll target for the given size of the main window.
+	 * @param wxSize $size
+	 * @return wxSize
+	 */
+	function GetSizeAvailableForScrollTarget(wxSize $size){}
+
+	/**
+	 * GetTargetRect
+	 * @return wxRect
+	 */
+	function GetTargetRect(){}
+
+	/**
+	 * GetTargetWindow
+	 * @return wxWindow
+	 */
+	function GetTargetWindow(){}
+
+	/**
+	 * This is a simple overload of GetViewStart(int*,int*); see that function for more info.
+	 * @param integer $x
+	 * @param integer $y
+	 */
+	function GetViewStart(&$x, &$y){}
+
+	/**
+	 * Gets the size in device units of the scrollable window area (as opposed to the client size, which is the area of the window currently visible).
+	 * @param integer $x
+	 * @param integer $y
+	 */
+	function GetVirtualSize(&$x, &$y){}
+
+	/**
+	 * Are we generating the autoscroll events?
+	 * @return bool
+	 */
+	function IsAutoScrolling(){}
+
+	/**
+	 * Motif only: true if the window has a backing bitmap.
+	 * @return bool
+	 */
+	function IsRetained(){}
+
+	/**
+	 * Called by the default paint event handler to allow the application to define painting behaviour without having to worry about calling DoPrepareDC().
+	 * @param wxDC $dc
+	 */
+	function OnDraw(wxDC &$dc){}
+
+	/**
+	 * This function is for backwards compatibility only and simply calls DoPrepareDC() now.
+	 * @param wxDC $dc
+	 */
+	function PrepareDC(wxDC &$dc){}
+
+	/**
+	 * This is an overload of Scroll(int,int); see that function for more info.
+	 * @param wxPoint $pt
+	 * @param integer $x
+	 * @param integer $y
+	 */
+	function Scroll(wxPoint $pt, $x, $y){}
+
+	/**
+	 * This method can be overridden in a derived class to forbid sending the auto scroll events - note that unlike StopAutoScrolling() it doesn't stop the timer, so it will be called repeatedly and will typically return different values depending on the current mouse position.
+	 * @param wxScrollWinEvent $event
+	 * @return bool
+	 */
+	function SendAutoScrollEvents(wxScrollWinEvent &$event){}
+
+	/**
+	 * SetScale
+	 * @param float $xs
+	 * @param float $ys
+	 */
+	function SetScale($xs, $ys){}
+
+	/**
+	 * SetScrollPageSize
+	 * @param integer $orient
+	 * @param integer $pageSize
+	 */
+	function SetScrollPageSize($orient, $pageSize){}
+
+	/**
+	 * Set the horizontal and vertical scrolling increment only.
+	 * @param integer $xstep
+	 * @param integer $ystep
+	 */
+	function SetScrollRate($xstep, $ystep){}
+
+	/**
+	 * Sets up vertical and/or horizontal scrollbars.
+	 * @param integer $pixelsPerUnitX
+	 * @param integer $pixelsPerUnitY
+	 * @param integer $noUnitsX
+	 * @param integer $noUnitsY
+	 * @param integer $xPos
+	 * @param integer $yPos
+	 * @param bool $noRefresh
+	 */
+	function SetScrollbars($pixelsPerUnitX, $pixelsPerUnitY, $noUnitsX, $noUnitsY, $xPos, $yPos, $noRefresh=false){}
+
+	/**
+	 * SetTargetRect
+	 * @param wxRect $rect
+	 */
+	function SetTargetRect(wxRect $rect){}
+
+	/**
+	 * Call this function to tell wxScrolled to perform the actual scrolling on a different window (and not on itself).
+	 * @param wxWindow $window
+	 */
+	function SetTargetWindow(wxWindow &$window){}
+
+	/**
+	 * Set the scrollbar visibility.
+	 * @param wxScrollbarVisibility $horz
+	 * @param wxScrollbarVisibility $vert
+	 */
+	function ShowScrollbars(wxScrollbarVisibility $horz, wxScrollbarVisibility $vert){}
+
+	/**
+	 * Stop generating the scroll events when mouse is held outside the window.
+	 */
+	function StopAutoScrolling(){}
+}
+
 class wxScrolledWindow extends wxPanel
 {
+	/**
+	 * wxScrolledWindow
+	 * @param wxWindow $parent
+	 * @param integer $winid
+	 * @param wxPoint $pos
+	 * @param wxSize $size
+	 * @param integer $style
+	 * @param string $name
+	 */
+	function wxScrolledWindow(wxWindow &$parent, $winid=wxID_ANY, wxPoint $pos=null, wxSize $size=null, $style=wxScrolledWindowStyle, $name=wxPanelNameStr){}
 }
 
 class wxSearchCtrl extends wxTextCtrl
@@ -35480,12 +35680,6 @@ class wxSizer extends wxObject
 	function SetSizeHints(wxWindow &$window){}
 
 	/**
-	 * Tell the sizer to set the minimal size of the window virtual area to match the sizer's minimal size.
-	 * @param wxWindow $window
-	 */
-	function SetVirtualSizeHints(wxWindow &$window){}
-
-	/**
 	 * Shows or hides sizer.
 	 * @param wxSizer $sizer
 	 * @param bool $show
@@ -35824,28 +36018,10 @@ class wxSizerItem extends wxObject
 	function SetRatio($ratio, wxSize $size, $width, $height){}
 
 	/**
-	 * Set the sizer tracked by this item.
-	 * @param wxSizer $sizer
-	 */
-	function SetSizer(wxSizer &$sizer){}
-
-	/**
-	 * Set the size of the spacer tracked by this item.
-	 * @param wxSize $size
-	 */
-	function SetSpacer(wxSize $size){}
-
-	/**
 	 * SetUserData
 	 * @param wxObject $userData
 	 */
 	function SetUserData(wxObject &$userData){}
-
-	/**
-	 * Set the window to be tracked by this item.
-	 * @param wxWindow $window
-	 */
-	function SetWindow(wxWindow &$window){}
 
 	/**
 	 * Set the show item attribute, which sizers use to determine if the item is to be made part of the layout or not.
@@ -37090,6 +37266,12 @@ class wxStyledTextCtrl extends wxControl
 	function AnnotationClearAll(){}
 
 	/**
+	 * Clear annotations from the given line.
+	 * @param integer $line
+	 */
+	function AnnotationClearLine($line){}
+
+	/**
 	 * Get the number of annotation lines for a line.
 	 * @param integer $line
 	 * @return integer
@@ -37204,6 +37386,12 @@ class wxStyledTextCtrl extends wxControl
 	function AutoCompGetCancelAtStart(){}
 
 	/**
+	 * Get auto-completion case insensitive behaviour.
+	 * @return integer
+	 */
+	function AutoCompGetCaseInsensitiveBehaviour(){}
+
+	/**
 	 * Retrieve whether a single item auto-completion list automatically choose the item.
 	 * @return bool
 	 */
@@ -37274,6 +37462,12 @@ class wxStyledTextCtrl extends wxControl
 	 * @param bool $cancel
 	 */
 	function AutoCompSetCancelAtStart($cancel){}
+
+	/**
+	 * Set auto-completion case insensitive behaviour to either prefer case-sensitive matches or have no preference.
+	 * @param integer $behaviour
+	 */
+	function AutoCompSetCaseInsensitiveBehaviour($behaviour){}
 
 	/**
 	 * Should a single item auto-completion list automatically choose the item.
@@ -37353,11 +37547,25 @@ class wxStyledTextCtrl extends wxControl
 	function BraceBadLight($pos){}
 
 	/**
+	 * Use specified indicator to highlight non matching brace instead of changing its style.
+	 * @param bool $useBraceBadLightIndicator
+	 * @param integer $indicator
+	 */
+	function BraceBadLightIndicator($useBraceBadLightIndicator, $indicator){}
+
+	/**
 	 * Highlight the characters at two positions.
 	 * @param integer $pos1
 	 * @param integer $pos2
 	 */
 	function BraceHighlight($pos1, $pos2){}
+
+	/**
+	 * Use specified indicator to highlight matching braces instead of changing their style.
+	 * @param bool $useBraceHighlightIndicator
+	 * @param integer $indicator
+	 */
+	function BraceHighlightIndicator($useBraceHighlightIndicator, $indicator){}
 
 	/**
 	 * Find the position of a matching brace or INVALID_POSITION if no match.
@@ -37409,6 +37617,12 @@ class wxStyledTextCtrl extends wxControl
 	function CallTipSetHighlight($start, $end){}
 
 	/**
+	 * Set position of calltip, above or below text.
+	 * @param bool $above
+	 */
+	function CallTipSetPosition($above){}
+
+	/**
 	 * Show a call tip containing a definition near position pos.
 	 * @param integer $pos
 	 * @param string $definition
@@ -37443,6 +37657,14 @@ class wxStyledTextCtrl extends wxControl
 	 * Cancel any modes such as call tip or auto-completion list display.
 	 */
 	function Cancel(){}
+
+	/**
+	 * Indicate that the internal state of a lexer has changed over a range and therefore there may be a need to redraw.
+	 * @param integer $start
+	 * @param integer $end
+	 * @return integer
+	 */
+	function ChangeLexerState($start, $end){}
 
 	/**
 	 * Move caret left one character.
@@ -37554,6 +37776,13 @@ class wxStyledTextCtrl extends wxControl
 	function Colourise($start, $end){}
 
 	/**
+	 * Find the next line at or after lineStart that is a contracted fold header line.
+	 * @param integer $lineStart
+	 * @return integer
+	 */
+	function ContractedFoldNext($lineStart){}
+
+	/**
 	 * Convert all line endings in the document to one mode.
 	 * @param integer $eolMode
 	 */
@@ -37582,6 +37811,14 @@ class wxStyledTextCtrl extends wxControl
 	 * @param string $text
 	 */
 	function CopyText($length, $text){}
+
+	/**
+	 * Count characters between two positions.
+	 * @param integer $startPos
+	 * @param integer $endPos
+	 * @return integer
+	 */
+	function CountCharacters($startPos, $endPos){}
 
 	/**
 	 * Create the UI elements for a STC that was created with the default ctor.
@@ -37627,6 +37864,11 @@ class wxStyledTextCtrl extends wxControl
 	function DelWordRight(){}
 
 	/**
+	 * Delete the word to the right of the caret, but not the trailing non-word characters.
+	 */
+	function DelWordRightEnd(){}
+
+	/**
 	 * Delete the selection or if no selection, the character before the caret.
 	 */
 	function DeleteBack(){}
@@ -37635,6 +37877,32 @@ class wxStyledTextCtrl extends wxControl
 	 * Delete the selection or if no selection, the character before the caret.
 	 */
 	function DeleteBackNotLine(){}
+
+	/**
+	 * Delete a range of text in the document.
+	 * @param integer $pos
+	 * @param integer $deleteLength
+	 */
+	function DeleteRange($pos, $deleteLength){}
+
+	/**
+	 * Retrieve a '
+' separated list of descriptions of the keyword sets understood by the current lexer.
+	 * @return string
+	 */
+	function DescribeKeyWordSets(){}
+
+	/**
+	 * Describe a property.
+	 * @param string $name
+	 * @return string
+	 */
+	function DescribeProperty($name){}
+
+	/**
+	 * DiscardEdits
+	 */
+	function DiscardEdits(){}
 
 	/**
 	 * Allow for simulating a DnD DragOver.
@@ -37780,6 +38048,12 @@ class wxStyledTextCtrl extends wxControl
 	function GetAdditionalSelectionTyping(){}
 
 	/**
+	 * Are all lines visible?
+	 * @return bool
+	 */
+	function GetAllLinesVisible(){}
+
+	/**
 	 * Returns the position of the opposite end of the selection to the caret.
 	 * @return integer
 	 */
@@ -37834,6 +38108,12 @@ class wxStyledTextCtrl extends wxControl
 	function GetCaretSticky(){}
 
 	/**
+	 * Returns the current style of the caret.
+	 * @return integer
+	 */
+	function GetCaretStyle(){}
+
+	/**
 	 * Returns the width of the insert mode caret.
 	 * @return integer
 	 */
@@ -37870,6 +38150,13 @@ class wxStyledTextCtrl extends wxControl
 	 * @return integer
 	 */
 	function GetControlCharSymbol(){}
+
+	/**
+	 * Retrieve the text of the line containing the caret.
+	 * @param integer $linePos
+	 * @return string
+	 */
+	function GetCurLine(&$linePos=NULL){}
 
 	/**
 	 * Returns the line number of the line with the caret.
@@ -37959,10 +38246,46 @@ class wxStyledTextCtrl extends wxControl
 	function GetFoldParent($line){}
 
 	/**
+	 * Return a position which, to avoid performance costs, should not be within the range of a call to GetRangePointer.
+	 * @return integer
+	 */
+	function GetGapPosition(){}
+
+	/**
 	 * Get the highlighted indentation guide column.
 	 * @return integer
 	 */
 	function GetHighlightGuide(){}
+
+	/**
+	 * Get the back colour for active hotspots.
+	 * @return wxColour
+	 */
+	function GetHotspotActiveBackground(){}
+
+	/**
+	 * Get the fore colour for active hotspots.
+	 * @return wxColour
+	 */
+	function GetHotspotActiveForeground(){}
+
+	/**
+	 * Get whether underlining for active hotspots.
+	 * @return bool
+	 */
+	function GetHotspotActiveUnderline(){}
+
+	/**
+	 * Get the HotspotSingleLine property.
+	 * @return bool
+	 */
+	function GetHotspotSingleLine(){}
+
+	/**
+	 * Get the identifier.
+	 * @return integer
+	 */
+	function GetIdentifier(){}
 
 	/**
 	 * Retrieve indentation size.
@@ -37975,6 +38298,24 @@ class wxStyledTextCtrl extends wxControl
 	 * @return integer
 	 */
 	function GetIndentationGuides(){}
+
+	/**
+	 * Get the current indicator.
+	 * @return integer
+	 */
+	function GetIndicatorCurrent(){}
+
+	/**
+	 * Get the current indicator value.
+	 * @return integer
+	 */
+	function GetIndicatorValue(){}
+
+	/**
+	 * Returns the insertion point, or cursor, position.
+	 * @return integer
+	 */
+	function GetInsertionPoint(){}
 
 	/**
 	 * Are keys always interpreted as Unicode?
@@ -37995,6 +38336,12 @@ class wxStyledTextCtrl extends wxControl
 	 * @return bool
 	 */
 	function GetLastKeydownProcessed(){}
+
+	/**
+	 * Returns the zero based index of the last position in the text control, which is equal to the number of characters in the control.
+	 * @return integer
+	 */
+	function GetLastPosition(){}
 
 	/**
 	 * Retrieve the degree of caching of layout information.
@@ -38055,6 +38402,13 @@ class wxStyledTextCtrl extends wxControl
 	function GetLineIndentation($line){}
 
 	/**
+	 * GetLineLength
+	 * @param integer $n
+	 * @return integer
+	 */
+	function GetLineLength($n){}
+
+	/**
 	 * Retrieve the position of the end of the selection at the given line (INVALID_POSITION if no selection on this line).
 	 * @param integer $line
 	 * @return integer
@@ -38076,6 +38430,13 @@ class wxStyledTextCtrl extends wxControl
 	function GetLineState($line){}
 
 	/**
+	 * GetLineText
+	 * @param integer $n
+	 * @return string
+	 */
+	function GetLineText($n){}
+
+	/**
 	 * Is a line visible?
 	 * @param integer $line
 	 * @return bool
@@ -38089,6 +38450,13 @@ class wxStyledTextCtrl extends wxControl
 	function GetMainSelection(){}
 
 	/**
+	 * Retrieve the cursor shown in a margin.
+	 * @param integer $margin
+	 * @return integer
+	 */
+	function GetMarginCursor($margin){}
+
+	/**
 	 * Returns the size in pixels of the left margin.
 	 * @return integer
 	 */
@@ -38100,6 +38468,12 @@ class wxStyledTextCtrl extends wxControl
 	 * @return integer
 	 */
 	function GetMarginMask($margin){}
+
+	/**
+	 * Get the margin options.
+	 * @return integer
+	 */
+	function GetMarginOptions(){}
 
 	/**
 	 * Returns the size in pixels of the right margin.
@@ -38166,10 +38540,22 @@ class wxStyledTextCtrl extends wxControl
 	function GetMouseDwellTime(){}
 
 	/**
+	 * Retrieve the effect of pasting when there are multiple selections.
+	 * @return integer
+	 */
+	function GetMultiPaste(){}
+
+	/**
 	 * Whether multiple selections can be made.
 	 * @return bool
 	 */
 	function GetMultipleSelection(){}
+
+	/**
+	 * GetNumberOfLines
+	 * @return integer
+	 */
+	function GetNumberOfLines(){}
 
 	/**
 	 * Returns true if overtype mode is active otherwise false is returned.
@@ -38182,6 +38568,12 @@ class wxStyledTextCtrl extends wxControl
 	 * @return bool
 	 */
 	function GetPasteConvertEndings(){}
+
+	/**
+	 * How many entries are allocated to the position cache?
+	 * @return integer
+	 */
+	function GetPositionCacheSize(){}
 
 	/**
 	 * Returns the print colour mode.
@@ -38221,6 +38613,12 @@ class wxStyledTextCtrl extends wxControl
 	 * @return integer
 	 */
 	function GetPropertyInt($key){}
+
+	/**
+	 * Get the set of characters making up punctuation characters.
+	 * @return string
+	 */
+	function GetPunctuationChars(){}
 
 	/**
 	 * In read-only mode?
@@ -38277,6 +38675,12 @@ class wxStyledTextCtrl extends wxControl
 	function GetScrollWidth(){}
 
 	/**
+	 * Retrieve whether the scroll width tracks wide lines.
+	 * @return bool
+	 */
+	function GetScrollWidthTracking(){}
+
+	/**
 	 * Get the search flags used by SearchInTarget.
 	 * @return integer
 	 */
@@ -38289,10 +38693,23 @@ class wxStyledTextCtrl extends wxControl
 	function GetSelAlpha(){}
 
 	/**
+	 * Is the selection end of line filled?
+	 * @return bool
+	 */
+	function GetSelEOLFilled(){}
+
+	/**
 	 * Retrieve the selected text.
 	 * @return string
 	 */
 	function GetSelectedText(){}
+
+	/**
+	 * Gets the current selection span.
+	 * @param integer $from
+	 * @param integer $to
+	 */
+	function GetSelection(&$from, &$to){}
 
 	/**
 	 * Returns the position at the end of the selection.
@@ -38367,6 +38784,14 @@ class wxStyledTextCtrl extends wxControl
 	function GetStatus(){}
 
 	/**
+	 * GetStyle
+	 * @param integer $position
+	 * @param wxTextAttr $style
+	 * @return bool
+	 */
+	function GetStyle($position, wxTextAttr &$style){}
+
+	/**
 	 * Returns the style byte at the position.
 	 * @param integer $pos
 	 * @return integer
@@ -38398,6 +38823,13 @@ class wxStyledTextCtrl extends wxControl
 	function GetTabWidth(){}
 
 	/**
+	 * Retrieve the value of a tag from a regular expression search.
+	 * @param integer $tagNumber
+	 * @return string
+	 */
+	function GetTag($tagNumber){}
+
+	/**
 	 * Get the position that ends the target.
 	 * @return integer
 	 */
@@ -38408,6 +38840,12 @@ class wxStyledTextCtrl extends wxControl
 	 * @return integer
 	 */
 	function GetTargetStart(){}
+
+	/**
+	 * Get the tech.
+	 * @return integer
+	 */
+	function GetTechnology(){}
 
 	/**
 	 * Retrieve all the text in the document.
@@ -38478,10 +38916,22 @@ class wxStyledTextCtrl extends wxControl
 	function GetVirtualSpaceOptions(){}
 
 	/**
+	 * Get the set of characters making up whitespace for when moving or selecting by word.
+	 * @return string
+	 */
+	function GetWhitespaceChars(){}
+
+	/**
 	 * Get the size of the dots used to mark space characters.
 	 * @return integer
 	 */
 	function GetWhitespaceSize(){}
+
+	/**
+	 * Get the set of characters making up words for when moving or selecting by word.
+	 * @return string
+	 */
+	function GetWordChars(){}
 
 	/**
 	 * Retrieve how wrapped sublines are placed.
@@ -38586,6 +39036,35 @@ class wxStyledTextCtrl extends wxControl
 	function HomeWrapExtend(){}
 
 	/**
+	 * Are any indicators present at position?
+	 * @param integer $position
+	 * @return integer
+	 */
+	function IndicatorAllOnFor($position){}
+
+	/**
+	 * Turn a indicator off over a range.
+	 * @param integer $position
+	 * @param integer $clearLength
+	 */
+	function IndicatorClearRange($position, $clearLength){}
+
+	/**
+	 * Where does a particular indicator end?
+	 * @param integer $indicator
+	 * @param integer $position
+	 * @return integer
+	 */
+	function IndicatorEnd($indicator, $position){}
+
+	/**
+	 * Turn a indicator on over a range.
+	 * @param integer $position
+	 * @param integer $fillLength
+	 */
+	function IndicatorFillRange($position, $fillLength){}
+
+	/**
 	 * Get the alpha fill colour of the given indicator.
 	 * @param integer $indicator
 	 * @return integer
@@ -38600,11 +39079,25 @@ class wxStyledTextCtrl extends wxControl
 	function IndicatorGetForeground($indic){}
 
 	/**
+	 * Get the alpha outline colour of the given indicator.
+	 * @param integer $indicator
+	 * @return integer
+	 */
+	function IndicatorGetOutlineAlpha($indicator){}
+
+	/**
 	 * Retrieve the style of an indicator.
 	 * @param integer $indic
 	 * @return integer
 	 */
 	function IndicatorGetStyle($indic){}
+
+	/**
+	 * Retrieve whether indicator drawn under or over text.
+	 * @param integer $indic
+	 * @return bool
+	 */
+	function IndicatorGetUnder($indic){}
 
 	/**
 	 * Set the alpha fill colour of the given indicator.
@@ -38621,11 +39114,41 @@ class wxStyledTextCtrl extends wxControl
 	function IndicatorSetForeground($indic, wxColour $fore){}
 
 	/**
+	 * Set the alpha outline colour of the given indicator.
+	 * @param integer $indicator
+	 * @param integer $alpha
+	 */
+	function IndicatorSetOutlineAlpha($indicator, $alpha){}
+
+	/**
 	 * Set an indicator to plain, squiggle or TT.
 	 * @param integer $indic
 	 * @param integer $style
 	 */
 	function IndicatorSetStyle($indic, $style){}
+
+	/**
+	 * Set an indicator to draw under text or over(default).
+	 * @param integer $indic
+	 * @param bool $under
+	 */
+	function IndicatorSetUnder($indic, $under){}
+
+	/**
+	 * Where does a particular indicator start?
+	 * @param integer $indicator
+	 * @param integer $position
+	 * @return integer
+	 */
+	function IndicatorStart($indicator, $position){}
+
+	/**
+	 * What value does a particular indicator have at at a position?
+	 * @param integer $indicator
+	 * @param integer $position
+	 * @return integer
+	 */
+	function IndicatorValueAt($indicator, $position){}
 
 	/**
 	 * Insert string at a position.
@@ -38640,6 +39163,18 @@ class wxStyledTextCtrl extends wxControl
 	 * @param string $text
 	 */
 	function InsertTextRaw($pos, $text){}
+
+	/**
+	 * Returns true if the controls contents may be edited by user (note that it always can be changed by the program).
+	 * @return bool
+	 */
+	function IsEditable(){}
+
+	/**
+	 * IsModified
+	 * @return bool
+	 */
+	function IsModified(){}
 
 	/**
 	 * Copy the line containing the caret.
@@ -38851,6 +39386,11 @@ class wxStyledTextCtrl extends wxControl
 	function MarginTextClearAll(){}
 
 	/**
+	 * MarkDirty
+	 */
+	function MarkDirty(){}
+
+	/**
 	 * Add a marker to a line, returning an ID which can be used to find or delete the marker.
 	 * @param integer $line
 	 * @param integer $markerNumber
@@ -38882,6 +39422,13 @@ class wxStyledTextCtrl extends wxControl
 	function MarkerDefineBitmap($markerNumber, wxBitmap $bmp){}
 
 	/**
+	 * Define a marker from RGBA data.
+	 * @param integer $markerNumber
+	 * @param array $pixels
+	 */
+	function MarkerDefineRGBAImage($markerNumber, array $pixels){}
+
+	/**
 	 * Delete a marker from a line.
 	 * @param integer $line
 	 * @param integer $markerNumber
@@ -38899,6 +39446,12 @@ class wxStyledTextCtrl extends wxControl
 	 * @param integer $handle
 	 */
 	function MarkerDeleteHandle($handle){}
+
+	/**
+	 * Enable/disable highlight for current folding bloc (smallest one that contains the caret)
+	 * @param bool $enabled
+	 */
+	function MarkerEnableHighlight($enabled){}
 
 	/**
 	 * Get a bit mask of all the markers set on a line.
@@ -38945,6 +39498,13 @@ class wxStyledTextCtrl extends wxControl
 	function MarkerSetBackground($markerNumber, wxColour $back){}
 
 	/**
+	 * Set the background colour used for a particular marker number when its folding block is selected.
+	 * @param integer $markerNumber
+	 * @param wxColour $back
+	 */
+	function MarkerSetBackgroundSelected($markerNumber, wxColour $back){}
+
+	/**
 	 * Set the foreground colour used for a particular marker number.
 	 * @param integer $markerNumber
 	 * @param wxColour $fore
@@ -38955,6 +39515,16 @@ class wxStyledTextCtrl extends wxControl
 	 * Move the caret inside current view if it's not there already.
 	 */
 	function MoveCaretInsideView(){}
+
+	/**
+	 * Move the selected lines down one line, shifting the line below before the selection.
+	 */
+	function MoveSelectedLinesDown(){}
+
+	/**
+	 * Move the selected lines up one line, shifting the line above after the selection.
+	 */
+	function MoveSelectedLinesUp(){}
 
 	/**
 	 * Insert a new line, may use a CRLF, CR or LF depending on EOL mode.
@@ -39060,6 +39630,32 @@ class wxStyledTextCtrl extends wxControl
 	function PositionFromPointClose($x, $y){}
 
 	/**
+	 * Retrieve a '
+' separated list of properties understood by the current lexer.
+	 * @return string
+	 */
+	function PropertyNames(){}
+
+	/**
+	 * Retrieve the type of a property.
+	 * @param string $name
+	 * @return integer
+	 */
+	function PropertyType($name){}
+
+	/**
+	 * Set the height for future RGBA image data.
+	 * @param integer $height
+	 */
+	function RGBAImageSetHeight($height){}
+
+	/**
+	 * Set the width for future RGBA image data.
+	 * @param integer $width
+	 */
+	function RGBAImageSetWidth($width){}
+
+	/**
 	 * Redoes the next action on the undo history.
 	 */
 	function Redo(){}
@@ -39070,6 +39666,28 @@ class wxStyledTextCtrl extends wxControl
 	 * @param wxBitmap $bmp
 	 */
 	function RegisterImage($type, wxBitmap $bmp){}
+
+	/**
+	 * Register an RGBA image for use in autocompletion lists.
+	 * @param integer $type
+	 * @param array $pixels
+	 */
+	function RegisterRGBAImage($type, array $pixels){}
+
+	/**
+	 * Removes the text starting at the first given position up to (but not including) the character at the last position.
+	 * @param integer $from
+	 * @param integer $to
+	 */
+	function Remove($from, $to){}
+
+	/**
+	 * Replaces the text starting at the first position up to (but not including) the character at the last position with the given text.
+	 * @param integer $from
+	 * @param integer $to
+	 * @param string $value
+	 */
+	function Replace($from, $to, $value){}
 
 	/**
 	 * Replace the selected text with the argument text.
@@ -39110,10 +39728,20 @@ class wxStyledTextCtrl extends wxControl
 	function ScrollToColumn($column){}
 
 	/**
+	 * Scroll to end of document.
+	 */
+	function ScrollToEnd(){}
+
+	/**
 	 * Scroll enough to make the given line visible.
 	 * @param integer $line
 	 */
 	function ScrollToLine($line){}
+
+	/**
+	 * Scroll to start of document.
+	 */
+	function ScrollToStart(){}
 
 	/**
 	 * Sets the current caret position to be the search anchor.
@@ -39147,6 +39775,11 @@ class wxStyledTextCtrl extends wxControl
 	 * Select all the text in the document.
 	 */
 	function SelectAll(){}
+
+	/**
+	 * Deselects selected text in the control.
+	 */
+	function SelectNone(){}
 
 	/**
 	 * Duplicate the selection.
@@ -39256,6 +39889,12 @@ class wxStyledTextCtrl extends wxControl
 	function SetCaretSticky($useCaretStickyBehaviour){}
 
 	/**
+	 * Set the style of the caret to be drawn.
+	 * @param integer $caretStyle
+	 */
+	function SetCaretStyle($caretStyle){}
+
+	/**
 	 * Set the width of the insert mode caret.
 	 * @param integer $pixelWidth
 	 */
@@ -39285,6 +39924,13 @@ class wxStyledTextCtrl extends wxControl
 	function SetCurrentPos($pos){}
 
 	/**
+	 * SetDefaultStyle
+	 * @param wxTextAttr $style
+	 * @return bool
+	 */
+	function SetDefaultStyle(wxTextAttr $style){}
+
+	/**
 	 * Set the current end of line mode.
 	 * @param integer $eolMode
 	 */
@@ -39307,6 +39953,18 @@ class wxStyledTextCtrl extends wxControl
 	 * @param integer $mode
 	 */
 	function SetEdgeMode($mode){}
+
+	/**
+	 * Makes the text item editable or read-only, overriding the wxTE_READONLY flag.
+	 * @param bool $editable
+	 */
+	function SetEditable($editable){}
+
+	/**
+	 * Set caret to a position, while removing any existing selection.
+	 * @param integer $pos
+	 */
+	function SetEmptySelection($pos){}
 
 	/**
 	 * Sets the scroll range so that maximum scroll position has the last line at the bottom of the view (default).
@@ -39405,6 +40063,12 @@ class wxStyledTextCtrl extends wxControl
 	function SetHotspotSingleLine($singleLine){}
 
 	/**
+	 * Set the identifier reported as idFrom in notification messages.
+	 * @param integer $identifier
+	 */
+	function SetIdentifier($identifier){}
+
+	/**
 	 * Set the number of spaces used for one level of indentation.
 	 * @param integer $indentSize
 	 */
@@ -39415,6 +40079,24 @@ class wxStyledTextCtrl extends wxControl
 	 * @param integer $indentView
 	 */
 	function SetIndentationGuides($indentView){}
+
+	/**
+	 * Set the indicator used for IndicatorFillRange and IndicatorClearRange.
+	 * @param integer $indicator
+	 */
+	function SetIndicatorCurrent($indicator){}
+
+	/**
+	 * Set the value used for IndicatorFillRange.
+	 * @param integer $value
+	 */
+	function SetIndicatorValue($value){}
+
+	/**
+	 * Sets the insertion point at the given position.
+	 * @param integer $pos
+	 */
+	function SetInsertionPoint($pos){}
 
 	/**
 	 * Set up the key words used by the lexer.
@@ -39474,6 +40156,13 @@ class wxStyledTextCtrl extends wxControl
 	function SetMainSelection($selection){}
 
 	/**
+	 * Set the cursor shown when the mouse is inside a margin.
+	 * @param integer $margin
+	 * @param integer $cursor
+	 */
+	function SetMarginCursor($margin, $cursor){}
+
+	/**
 	 * Sets the size in pixels of the left margin.
 	 * @param integer $pixelWidth
 	 */
@@ -39485,6 +40174,12 @@ class wxStyledTextCtrl extends wxControl
 	 * @param integer $mask
 	 */
 	function SetMarginMask($margin, $mask){}
+
+	/**
+	 * Set the margin options.
+	 * @param integer $marginOptions
+	 */
+	function SetMarginOptions($marginOptions){}
 
 	/**
 	 * Sets the size in pixels of the right margin.
@@ -39539,6 +40234,12 @@ class wxStyledTextCtrl extends wxControl
 	function SetMouseDwellTime($periodMilliseconds){}
 
 	/**
+	 * Change the effect of pasting when there are multiple selections.
+	 * @param integer $multiPaste
+	 */
+	function SetMultiPaste($multiPaste){}
+
+	/**
 	 * Set whether multiple selections can be made.
 	 * @param bool $multipleSelection
 	 */
@@ -39555,6 +40256,12 @@ class wxStyledTextCtrl extends wxControl
 	 * @param bool $convert
 	 */
 	function SetPasteConvertEndings($convert){}
+
+	/**
+	 * Set number of entries in position cache.
+	 * @param integer $size
+	 */
+	function SetPositionCacheSize($size){}
 
 	/**
 	 * Modify colours when printing for clearer printed text.
@@ -39580,6 +40287,12 @@ class wxStyledTextCtrl extends wxControl
 	 * @param string $value
 	 */
 	function SetProperty($key, $value){}
+
+	/**
+	 * Set the set of characters making up punctuation characters Should be called after SetWordChars.
+	 * @param string $characters
+	 */
+	function SetPunctuationChars($characters){}
 
 	/**
 	 * Set to read only or read write.
@@ -39641,6 +40354,12 @@ class wxStyledTextCtrl extends wxControl
 	function SetScrollWidth($pixelWidth){}
 
 	/**
+	 * Sets whether the maximum width line displayed is used to set scroll width.
+	 * @param bool $tracking
+	 */
+	function SetScrollWidthTracking($tracking){}
+
+	/**
 	 * Set the search flags used by SearchInTarget.
 	 * @param integer $flags
 	 */
@@ -39658,6 +40377,12 @@ class wxStyledTextCtrl extends wxControl
 	 * @param wxColour $back
 	 */
 	function SetSelBackground($useSetting, wxColour $back){}
+
+	/**
+	 * Set the selection to have its end of line filled or not.
+	 * @param bool $filled
+	 */
+	function SetSelEOLFilled($filled){}
 
 	/**
 	 * Set the foreground colour of the main and additional selections and whether to use this setting.
@@ -39740,6 +40465,15 @@ class wxStyledTextCtrl extends wxControl
 	function SetStatus($statusCode){}
 
 	/**
+	 * SetStyle
+	 * @param integer $start
+	 * @param integer $end
+	 * @param wxTextAttr $style
+	 * @return bool
+	 */
+	function SetStyle($start, $end, wxTextAttr $style){}
+
+	/**
 	 * Divide each styling byte into lexical class bits (default: 5) and indicator bits (default: 3).
 	 * @param integer $bits
 	 */
@@ -39775,6 +40509,12 @@ class wxStyledTextCtrl extends wxControl
 	 * @param integer $pos
 	 */
 	function SetTargetStart($pos){}
+
+	/**
+	 * Set the technology used.
+	 * @param integer $technology
+	 */
+	function SetTechnology($technology){}
 
 	/**
 	 * Replace the contents of the document with the argument text.
@@ -39945,6 +40685,12 @@ class wxStyledTextCtrl extends wxControl
 	function ShowLines($lineStart, $lineEnd){}
 
 	/**
+	 * ShowPosition
+	 * @param integer $pos
+	 */
+	function ShowPosition($pos){}
+
+	/**
 	 * Start notifying the container of all key presses and commands.
 	 */
 	function StartRecord(){}
@@ -39985,6 +40731,118 @@ class wxStyledTextCtrl extends wxControl
 	 * Clear all the styles and make equivalent to the global default style.
 	 */
 	function StyleClearAll(){}
+
+	/**
+	 * Get the background colour of a style.
+	 * @param integer $style
+	 * @return wxColour
+	 */
+	function StyleGetBackground($style){}
+
+	/**
+	 * Get is a style bold or not.
+	 * @param integer $style
+	 * @return bool
+	 */
+	function StyleGetBold($style){}
+
+	/**
+	 * Get is a style mixed case, or to force upper or lower case.
+	 * @param integer $style
+	 * @return integer
+	 */
+	function StyleGetCase($style){}
+
+	/**
+	 * Get is a style changeable or not (read only).
+	 * @param integer $style
+	 * @return bool
+	 */
+	function StyleGetChangeable($style){}
+
+	/**
+	 * Get the character set of the font in a style.
+	 * @param integer $style
+	 * @return integer
+	 */
+	function StyleGetCharacterSet($style){}
+
+	/**
+	 * Get is a style to have its end of line filled or not.
+	 * @param integer $style
+	 * @return bool
+	 */
+	function StyleGetEOLFilled($style){}
+
+	/**
+	 * Get the font facename of a style.
+	 * @param integer $style
+	 * @return string
+	 */
+	function StyleGetFaceName($style){}
+
+	/**
+	 * Get the font of a style.
+	 * @param integer $style
+	 * @return wxFont
+	 */
+	function StyleGetFont($style){}
+
+	/**
+	 * Get the foreground colour of a style.
+	 * @param integer $style
+	 * @return wxColour
+	 */
+	function StyleGetForeground($style){}
+
+	/**
+	 * Get is a style a hotspot or not.
+	 * @param integer $style
+	 * @return bool
+	 */
+	function StyleGetHotSpot($style){}
+
+	/**
+	 * Get is a style italic or not.
+	 * @param integer $style
+	 * @return bool
+	 */
+	function StyleGetItalic($style){}
+
+	/**
+	 * Get the size of characters of a style.
+	 * @param integer $style
+	 * @return integer
+	 */
+	function StyleGetSize($style){}
+
+	/**
+	 * Get the size of characters of a style in points multiplied by 100.
+	 * @param integer $style
+	 * @return integer
+	 */
+	function StyleGetSizeFractional($style){}
+
+	/**
+	 * Get is a style underlined or not.
+	 * @param integer $style
+	 * @return bool
+	 */
+	function StyleGetUnderline($style){}
+
+	/**
+	 * Get is a style visible or not.
+	 * @param integer $style
+	 * @return bool
+	 */
+	function StyleGetVisible($style){}
+
+	/**
+	 * Get the weight of characters of a style.
+	 * @param integer $style
+	 * @return integer
+	 */
+	function StyleGetWeight($style){}
 
 	/**
 	 * Reset the default style to its state at startup.
@@ -40095,6 +40953,13 @@ class wxStyledTextCtrl extends wxControl
 	function StyleSetSize($style, $sizePoints){}
 
 	/**
+	 * Set the size of characters of a style.
+	 * @param integer $style
+	 * @param integer $caseForce
+	 */
+	function StyleSetSizeFractional($style, $caseForce){}
+
+	/**
 	 * Extract style settings from a spec-string which is composed of one or more of the following comma separated elements:
 	 * @param integer $styleNum
 	 * @param string $spec
@@ -40114,6 +40979,13 @@ class wxStyledTextCtrl extends wxControl
 	 * @param bool $visible
 	 */
 	function StyleSetVisible($style, $visible){}
+
+	/**
+	 * Set the weight of characters of a style.
+	 * @param integer $style
+	 * @param integer $weight
+	 */
+	function StyleSetWeight($style, $weight){}
 
 	/**
 	 * Swap that caret and anchor of the main selection.
@@ -40205,6 +41077,11 @@ class wxStyledTextCtrl extends wxControl
 	function VCHomeWrapExtend(){}
 
 	/**
+	 * Centre current line in window.
+	 */
+	function VerticalCentreCaret(){}
+
+	/**
 	 * Find the display line of a document line taking hidden lines into account.
 	 * @param integer $line
 	 * @return integer
@@ -40293,6 +41170,20 @@ class wxStyledTextCtrl extends wxControl
 	 * @return integer
 	 */
 	function WrapCount($line){}
+
+	/**
+	 * Writes the text into the text control at the current insertion position.
+	 * @param string $text
+	 */
+	function WriteText($text){}
+
+	/**
+	 * XYToPosition
+	 * @param integer $x
+	 * @param integer $y
+	 * @return integer
+	 */
+	function XYToPosition($x, $y){}
 
 	/**
 	 * Magnify the displayed text by increasing the sizes by 1 point.
@@ -41892,6 +42783,16 @@ class wxTextEntry
 	 * @param string $text
 	 */
 	function AppendText($text){}
+
+	/**
+	 * Copies the selected text to the clipboard and removes it from the control.
+	 */
+	function Cut(){}
+
+	/**
+	 * Deselects selected text in the control.
+	 */
+	function SelectNone(){}
 }
 
 class wxTextEntryDialog extends wxDialog
@@ -42259,13 +43160,6 @@ class wxThreadHelper
 	 * @return wxThreadError
 	 */
 	function CreateThread(wxThreadKind $kind=null, $stackSize){}
-
-	/**
-	 * Create
-	 * @param integer $stackSize
-	 * @return wxThreadError
-	 */
-	function Create($stackSize){}
 }
 
 class wxTimePickerCtrl extends wxControl
@@ -42709,14 +43603,6 @@ class wxToolBar extends wxControl
 	 * @param integer $toolId
 	 */
 	function OnMouseEnter($toolId){}
-
-	/**
-	 * OnRightClick
-	 * @param integer $toolId
-	 * @param integer $x
-	 * @param integer $y
-	 */
-	function OnRightClick($toolId, $x, $y){}
 
 	/**
 	 * This function should be called after you have added tools.
@@ -46691,12 +47577,6 @@ class wxWindow extends wxEvtHandler
 	function SetId($winid){}
 
 	/**
-	 * Sets the initial window size if none is given (i.e. at least one of the components of the size passed to ctor/Create() is wxDefaultCoord).
-	 * @param wxSize $size
-	 */
-	function SetInitialBestSize(wxSize $size){}
-
-	/**
 	 * A smart SetSize that will fill in default size components with the window's best size values.
 	 * @param wxSize $size
 	 */
@@ -46767,12 +47647,6 @@ class wxWindow extends wxEvtHandler
 	 * @param wxColour $colour
 	 */
 	function SetOwnForegroundColour(wxColour $colour){}
-
-	/**
-	 * SetPalette
-	 * @param wxPalette $pal
-	 */
-	function SetPalette(wxPalette $pal){}
 
 	/**
 	 * A synonym for Centre().
